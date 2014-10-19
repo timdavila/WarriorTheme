@@ -3,8 +3,8 @@
  * The template for displaying featured content
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Warrior_Theme
+ * @since Warrior Theme 0.1
  */
 ?>
 
@@ -14,11 +14,11 @@
 		/**
 		 * Fires before the Twenty Fourteen featured content.
 		 *
-		 * @since Twenty Fourteen 1.0
+		 * @since Warrior Theme 0.1
 		 */
-		do_action( 'twentyfourteen_featured_posts_before' );
+		do_action( 'warriortheme_featured_posts_before' );
 
-		$featured_posts = twentyfourteen_get_featured_posts();
+		$featured_posts = warriortheme_get_featured_posts();
 		foreach ( (array) $featured_posts as $order => $post ) :
 			setup_postdata( $post );
 
@@ -29,9 +29,9 @@
 		/**
 		 * Fires after the Twenty Fourteen featured content.
 		 *
-		 * @since Twenty Fourteen 1.0
+		 * @since Warrior Theme 0.1
 		 */
-		do_action( 'twentyfourteen_featured_posts_after' );
+		do_action( 'warriortheme_featured_posts_after' );
 
 		wp_reset_postdata();
 	?>

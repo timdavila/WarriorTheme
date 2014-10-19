@@ -3,8 +3,8 @@
  * The Content Sidebar
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Warrior_Theme
+ * @since Warrior Theme 0.1
  */
 
 if ( ! is_active_sidebar( 'sidebar-2' ) ) {

@@ -7,8 +7,8 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Warrior_Theme
+ * @since Warrior Theme 0.1
  */
 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Tag Archives: %s', 'twentyfourteen' ), single_tag_title( '', false ) ); ?></h1>
+				<h1 class="archive-title"><?php printf( __( 'Tag Archives: %s', 'warriortheme' ), single_tag_title( '', false ) ); ?></h1>
 
 				<?php
 					// Show an optional term description.
@@ -43,7 +43,7 @@ get_header(); ?>
 
 					endwhile;
 					// Previous/next page navigation.
-					twentyfourteen_paging_nav();
+					warriortheme_paging_nav();
 
 				else :
 					// If no content, include the "No posts found" template.
