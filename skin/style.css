@@ -423,27 +423,24 @@ hr {
  * -----------------------------------------------------------------------------
  */
 
-
+.cf {
+	clear: both;
+}
 
 body {
 	font-family: Signika;
 	width: 1280px;
-}
-
-.hero {
-    	white-space: nowrap;
-    	overflow: hidden;
 }
     	
 .logo, .hero-ad, .hero-meta {
 	display: inline-block;
 }
 
-nav.primary, nav.secondary {
-	width: 100%;
+.primary ul, .secondary ul {
+	margin: 0;
 }
 
-nav.primary ul li, nav.secondary ul li {
+.primary ul li, .secondary ul li {
 	list-style-type: none;
 	float: left;
 }
@@ -451,4 +448,31 @@ nav.primary ul li, nav.secondary ul li {
 .secondary ul li {
 	background: url('http://placehold.it/60x60');
 	display: block;
+	width: 60px;
+	height: 60px;
+}
+
+.secondary ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.primary ul li a {
+	display: block;
+	width: 100px;
+	height: 40px;
+}
+
+#content {
+	float: left;
+	width: 980px;
+}
+
+article {
+	padding: 0px 30px;
+}
+
+#sidebar {
+	float: right;
 }
