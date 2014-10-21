@@ -49,7 +49,6 @@ input,
 select,
 textarea {
 	color: #2b2b2b;
-	font-family: Lato, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -60,8 +59,8 @@ body {
 }
 
 a {
-	color: #24890d;
-	text-decoration: none;
+	/*color: #24890d;
+	text-decoration: none;*/
 }
 
 a:focus {
@@ -75,7 +74,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: #41a62a;
+	/*color: #41a62a;*/
 }
 
 h1,
@@ -86,7 +85,7 @@ h5,
 h6 {
 	clear: both;
 	font-weight: 700;
-	margin: 36px 0 12px;
+	margin: 12px 0 12px;
 }
 
 h1 {
@@ -404,7 +403,7 @@ hr {
 
 /* Support a widely-adopted but non-standard selector for text selection styles
  * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
- */
+ *
 ::selection {
 	background: #24890d;
 	color: #fff;
@@ -416,52 +415,300 @@ hr {
 	color: #fff;
 	text-shadow: none;
 }
-
+*/
 
 /*
  * Styles
  * -----------------------------------------------------------------------------
  */
 
+.lf {
+	float: left;
+}
+
+.rf {
+	float: right;
+}
+
 .cf {
 	clear: both;
 }
 
-body {
-	font-family: Signika;
+body {	
+	font-family: 'Signika', sans-serif;
+	font-size: 16px;
 	width: 1280px;
+	margin: 0px auto;
 }
     	
 .logo, .hero-ad, .hero-meta {
-	display: inline-block;
+	float: left;
+	height: 90px;
 }
 
-.primary ul, .secondary ul {
+.logo {
+	width: 260px;
+	overflow: hidden;
+}
+
+.logo img {
+	max-width: 260px;
+	max-height: 90px;
+}
+
+.hero-ad {
+	width: 728px;
+	overflow: hidden;
+}
+
+.hero-ad img {
+	max-width: 728px;
+	max-height: 90px;
+}
+
+.hero-meta {
+	width: 292px;
+}
+
+.secondary > ul {
+	width: 1140px; /* 60 x 19 */
+	height: 60px;
+	margin: 0px auto;
+}
+
+
+.primary ul {
 	margin: 0;
 }
 
 .primary ul li, .secondary ul li {
-	list-style-type: none;
+	list-style: none;
 	float: left;
 }
 
-.secondary ul li {
+.secondary {
+	width: 100%;
+}
+
+.secondary > ul li {
 	background: url('http://placehold.it/60x60');
 	display: block;
 	width: 60px;
 	height: 60px;
 }
 
-.secondary ul li a {
+.secondary > ul li a {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 
+
+/*************
+Secondary Flyout
+*************/
+
+
+.flyout {
+	display: none;
+	width: 1140px;
+	height: 260px;
+	position: absolute;
+	background: white;
+	font-size: 14px;
+}
+
+.secondary ul li:nth-of-type(2) .flyout {
+	margin-left: -60px;
+}
+
+.secondary ul li:nth-of-type(3) .flyout {
+	margin-left: -120px;
+}
+
+.secondary ul li:nth-of-type(4) .flyout {
+	margin-left: -180px;
+}
+
+.secondary ul li:nth-of-type(5) .flyout {
+	margin-left: -240px;
+}
+
+.secondary ul li:nth-of-type(6) .flyout {
+	margin-left: -300px;
+}
+
+.secondary ul li:nth-of-type(7) .flyout {
+	margin-left: -360px;
+}
+
+.secondary ul li:nth-of-type(8) .flyout {
+	margin-left: -420px;
+}
+
+.secondary ul li:nth-of-type(9) .flyout {
+	margin-left: -480px;
+}
+
+.secondary ul li:nth-of-type(10) .flyout  {
+	margin-left: -540px;
+}
+
+.fly-col {
+	width: 288px; /* 216 * 4 + 274 = 1140 */ 
+	display: table-cell;
+}
+
+.fly-col:first-of-type {
+	text-align: center;
+	width: 274px;
+	display: block;
+}
+
+.fly-col ul {
+	margin-left: 5px;
+}
+
+.fly-col ul li {
+	list-style: none;
+	background: none;
+	display: block;
+	width: auto;
+	height: auto;
+	float: none;
+}
+
+.fly-col ul li:first-of-type {
+	font-weight:bold;
+	margin: 5px 0;
+}
+
+.fly-col ul li a {
+	width: auto;
+	height: auto;
+	display: static;
+}
+
+.secondary ul li:hover .flyout {
+	display: table;
+}
+
+.flyout:hover {
+	display: table;
+}
+
+/***********************/
+
+
 .primary ul li a {
 	display: block;
-	width: 100px;
-	height: 40px;
+	text-decoration: none;
+	color: #676767;
+	font-size: 20px;
+	
+}
+
+.primary {
+	display: table;
+	table-layout: fixed; /* even width for all items */
+	width: 100%;
+}
+
+.primary ul {
+	display: table-row;
+	width: 100%;
+}
+
+.primary ul li {
+	display: table-cell;
+	height: 44px;
+	width: auto;
+	float: none;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.social {
+	width: 240px; /* 48 x 5 */
+	height: 48px;
+	margin: 0px auto;
+}
+
+.social img {
+	float: left;
+}
+
+.search form {
+	width: 240px; /* same as social */
+	margin: 6px auto 2px auto;
+	height: 31px;
+	display: relative;
+}
+
+.in-search, .btn-search {
+	border: 0;
+	padding: 2px 5px;
+	background: #F5F5F5;
+	border-style: solid;
+	border-color: #666;
+	height: 25px;
+	float: left;
+}
+
+.in-search {
+	border-width: 1px 0px 1px 1px;
+	width: 210px;
+	font-size: 14px;
+}
+
+.btn-search {
+	border-width: 1px 1px 1px 0px;
+	width: 30px;
+	font-size: 16px;
+}
+
+.post-social p {
+	display: inline-block;
+	float: left;
+	padding-top: 4px;
+	height: 32px;
+}
+
+.btn-share {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	float: left;
+}
+
+.btn-share a {
+	display: block;
+	text-decoration: none;
+	color: #2B2B2B;
+	padding-top: 4px;
+	padding-bottom: 1px;
+}
+
+.btn-share a i {
+	font-size: 24px;
+}
+
+.btn-social {
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	float: left;
+}
+
+.btn-social a {
+	display: block;
+	text-decoration: none;
+	color: #2B2B2B;
+	padding: 5px 0px;
+}
+
+.btn-social a i {
+	font-size: 36px;
 }
 
 #content {
@@ -470,9 +717,103 @@ body {
 }
 
 article {
-	padding: 0px 30px;
+	padding: 25px 30px 30px 30px;
 }
 
-#sidebar {
+article img {
+	max-width: 100%;
+	margin-bottom: 12px;
+}
+
+article footer {
+	width: 100%;
+	height: 30px;
+}
+
+main {
+	height: 100%;
+}
+
+.sidebar {
 	float: right;
+	height: 100%;
+}
+
+.spacer {
+	height: 100px;
+	width: 100%;
+	display: block;
+}
+
+.sitewrap {
+	margin: 0px 0;
+}
+
+/*
+ * Colors (Demo)
+ * -----------------------------------------------------------------------------
+ */
+ 
+.demo {
+ 	font-family: 'Signika', sans-serif;
+ 	font-size: 26px;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	color: #fff;
+ 	text-shadow: rgba(0,0,0,0.5) -1px 0,
+ 		rgba(0,0,0,0.3) 0 -1px,
+ 		rgba(255,255,255,0.5) 0 1px,
+ 		rgba(0,0,0,0.3) -1px -1px;
+}
+ 
+.c1 {
+	background-color:rgba(0,240,240,0.4);
+}
+
+.c2 {
+	background-color:rgba(0,160,240,0.4);
+}
+
+.c3 {
+	background-color:rgba(0,80,240,0.4);
+}
+
+.c4 {
+	background-color:rgba(0,0,240,0.4);
+}
+
+.c5 {
+	background-color:rgba(0,240,40,0.4);
+}
+
+.c6 {
+	background-color:rgba(0,160,40,0.4);
+}
+
+.c7 {
+	background-color:rgba(0,80,40,0.4);
+}
+
+.c8 {
+	background-color:rgba(120,240,0,0.4);
+}
+
+.c9 {
+	background-color:rgba(120,160,0,0.4);
+}
+
+.c10 {
+	background-color:rgba(120,80,0,0.4);
+}
+
+.c11 {
+	background-color:rgba(120,0,0,0.4);
+}
+
+.c12 {
+	background-color:rgba(160,0,0,0.4);
+}
+
+.c13 {
+	background-color:rgba(160,80,0,0.4);
 }

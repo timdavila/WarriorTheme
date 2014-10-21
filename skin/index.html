@@ -7,8 +7,9 @@
 	<meta name="description" content="%Description">
 
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Signika" rel="stylesheet" type="text/css">
+	<!--<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">-->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Signika" rel="stylesheet" type="text/css">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,95 +17,364 @@
 
 	<title>%Title</title>
 </head>
-<body id="top">
-	<header>
+<body>
+	<header id="top">
 		<div class="hero">
-			<div class="logo">
-				<img src="http://placehold.it/260x90">
-			</div><!--
-		 --><div class="hero-ad">
-				<img src="http://placehold.it/728x90">
-			</div><!--
-		 --><div class="hero-meta">
+			<div class="logo demo c2">
+				<img src="http://placehold.it/260x90/000000/&text=Logo+-+260x90">
+				Logo
+			</div>
+			<div class="hero-ad demo c3">
+				<img src="http://placehold.it/728x90&text=Ad+Space+-+728+x+90">
+			</div>
+			<div class="hero-meta">
 				<div class="search">
+					<form>
+						<input class="in-search" type="text" label="Search" placeholder="Search this site..." required />
+						<button class="btn-search" type="Submit"><i class="fa fa-search"></i></button>
+					</form>
 				</div>
-				<div class="social">
-				<img src="http://placehold.it/48x48">
-				<img src="http://placehold.it/48x48">
-				<img src="http://placehold.it/48x48">
-				<img src="http://placehold.it/48x48">
-				<img src="http://placehold.it/48x48">
+				<div class="social cf">
+					<div class="btn-social"><a href="#"><i class="fa fa-facebook"></i></a></div>
+					<div class="btn-social"><a href="#"><i class="fa fa-twitter"></i></a></div>
+					<div class="btn-social"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+					<div class="btn-social"><a href="#"><i class="fa fa-youtube"></i></a></div>
+					<div class="btn-social"><a href="#"><i class="fa fa-rss"></i></a></div>
 				</div>
 			</div>
 		</div>
 
-		<nav class="primary">
+		<nav class="primary cf"> <!-- PRIMARY NAV, accomodates 4-10 links -->
 			<ul>
-				<li><a href="#">Item 1</a></li>
-				<li><a href="#">Item 2</a></li>
-				<li><a href="#">Item 3</a></li>
-				<li><a href="#">Item 4</a></li>
-				<li><a href="#">Item 5</a></li>
-				<li><a href="#">Item 6</a></li>
-				<li><a href="#">Item 7</a></li>
+				<li class="c13"><a href="#">Item 1</a></li>
+				<li class="c12"><a href="#">Item 2</a></li>
+				<li class="c13"><a href="#">Item 3</a></li>
+				<li class="c12"><a href="#">Item 4</a></li>
+				<li class="c13"><a href="#">Item 5</a></li>
+				<li class="c12"><a href="#">Item 6</a></li>
+				<li class="c13"><a href="#">Item 7</a></li>
 			</ul>
 		</nav>
 
-		<nav class="secondary cf">
+		<nav class="secondary cf c4">
 			<ul>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">6</a></li>
-				<li><a href="#">7</a></li>
-				<li><a href="#">8</a></li>
-				<li><a href="#">9</a></li>
-				<li><a href="#">10</a></li>
-				<li><a href="#">11</a></li>
-				<li><a href="#">12</a></li>
-				<li><a href="#">13</a></li>
-				<li><a href="#">14</a></li>
-				<li><a href="#">15</a></li>
-				<li><a href="#">16</a></li>
-				<li><a href="#">17</a></li>
-				<li><a href="#">18</a></li>
-				<li><a href="#">19</a></li>
+				<li><a href="#"></a> <!-- 1 -->
+					<div class="flyout">
+						<div class="fly-col">
+							<h2>Flyout Title</h2>
+							<img src="http://placehold.it/230x150">
+							<p>Optional Subtitle</p>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column Header</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+								<li><a href="#">Item 6</a></li>
+								<li><a href="#">Item 7</a></li>
+								<li><a href="#">Item 8</a></li>
+								<li><a href="#">Item 9</a></li>
+								<li><a href="#">Item 10</a></li>
+								<li><a href="#">Item 11</a></li>
+								<li><a href="#">Item 12</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column Header</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column Header</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+								<li><a href="#">Item 6</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column Header</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+								<li><a href="#">Item 6</a></li>
+								<li><a href="#">Item 7</a></li>
+								<li><a href="#">Item 8</a></li>
+							</ul>
+						</div>
+					</div>
+					</li>
+				<li><a href="#"></a> <!-- 2 -->
+					<div class="flyout">
+						<div class="fly-col">
+							<h2>Flyout Title 2</h2>
+							<img src="http://lorempixel.com/230/150">
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column Header</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+								<li><a href="#">Item 6</a></li>
+								<li><a href="#">Item 7</a></li>
+								<li><a href="#">Item 8</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column Header</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+								<li><a href="#">Item 6</a></li>
+								<li><a href="#">Item 7</a></li>
+								<li><a href="#">Item 8</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column Header</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+							</ul>
+						</div>
+					</div>
+					</li>
+				<li><a href="#"></a> <!-- 3 -->
+					<div class="flyout">
+						<div class="fly-col">
+							<h2>Flyout Title 3</h2>
+							<img src="http://lorempixel.com/230/150">
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 1</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 2</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 3</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 4</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 5</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+					</div>
+					</li>
+				<li><a href="#"></a> <!-- 4 -->
+					<div class="flyout">
+						<div class="fly-col">
+							<h2>Flyout Title 4</h2>
+							<img src="http://lorempixel.com/230/150">
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 1</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 2</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 3</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 4</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 5</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 6</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 7</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+						<div class="fly-col">
+							<ul>
+								<li>Column 8</li>
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+					</div>
+					</li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li> <!-- 19 -->
 			</ul>
 		</nav>
 
 	</header>
 
-	<main id="content">
+<div class="sitewrap">
+	<main id="content" class="c5">
 		<article>
-			<header>
+			<header class="c6">
 				<h1>Lorem Ipsum</h1>
 				<p>Posted on October 19, 2014 by Tim Davila</p>
 			</header>
-			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Quisque molestie pharetra odio quis ultrices. Donec dignissim aliquam orci eget congue. Donec varius tempor augue non malesuada. Suspendisse sollicitudin risus non metus varius, eget commodo lectus imperdiet. Mauris accumsan risus nibh, ac varius diam iaculis quis. Sed at arcu massa. Suspendisse potenti. Fusce at eros nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae molestie eros, a tristique nisl. Phasellus sollicitudin non lacus ac porta. Curabitur vitae condimentum enim. Cras aliquam est at purus auctor scelerisque vitae id leo. Sed sem metus, imperdiet ac molestie at, sodales eu nulla. Ut interdum convallis elit, sed pretium leo luctus ac.</p>
-			<p>Vestibulum malesuada laoreet neque, quis hendrerit leo sollicitudin ut. Aenean finibus cursus ullamcorper. In lobortis urna at magna posuere ultrices. Donec pretium, nisi eu pulvinar ornare, ex elit porta libero, ac fermentum nisi ipsum et nisl. Cras vulputate mattis consectetur. Nunc ac massa enim. Quisque porta nibh at magna mollis porta. Cras malesuada lorem ut cursus imperdiet. Donec nec tincidunt augue. Donec in mauris enim. Nunc tincidunt arcu nunc, ac tempor felis consequat a. Donec sollicitudin feugiat mi, ut bibendum neque imperdiet faucibus.</p>
-			<p>Suspendisse molestie laoreet ipsum eget laoreet. Suspendisse potenti. Aliquam sed lobortis ex. Fusce aliquam et nisl eu euismod. Donec a nulla bibendum, volutpat ex nec, condimentum erat. Pellentesque scelerisque nibh nunc, vitae maximus nisi convallis quis. Nam semper consectetur pharetra. Praesent dapibus arcu quis facilisis sodales. Sed sem enim, elementum nec finibus sed, gravida et enim. Donec aliquet diam at volutpat dictum. Aenean convallis gravida facilisis. Nulla vitae velit id justo venenatis tristique nec non purus. Aliquam finibus justo non viverra sagittis.</p>
-			<footer>
+			<img src="http://lorempixel.com/1000/400" />
+			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Quisque molestie pharetra odio quis ultrices.
+			Donec dignissim aliquam orci eget congue. Donec varius tempor augue non malesuada. Suspendisse sollicitudin risus non metus varius,
+			eget commodo lectus imperdiet. Mauris accumsan risus nibh, ac varius diam iaculis quis. Sed at arcu massa. Suspendisse potenti.
+			Fusce at eros nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae molestie eros,
+			a tristique nisl. <a href="#">Read more...</a></p>
+			<footer class="c6">
+				<div class="post-cat lf">
 				<p>Categories: <a href="#">Category 1</a>, <a href="#">Category 2</a>, <a href="#">Category 3</a></p>
-				<div class="social">
+				</div>
+				<div class="post-social rf">
 				<p>Share this post:</p>
-				<img src="http://placehold.it/32x32">
-				<img src="http://placehold.it/32x32">
-				<img src="http://placehold.it/32x32">
-				<img src="http://placehold.it/32x32">
+					<div class="btn-share"><a href="#"><i class="fa fa-facebook"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-twitter"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-reddit"></i></a></div>
+				</div>
+			</footer>
+		</article>
+
+		<article>
+			<header class="c6">
+				<h1>Another Ipsum</h1>
+				<p>Posted on October 18, 2014 by Tim Davila</p>
+			</header>
+			<img src="http://lorempixel.com/200/120" />
+			<h2>Lorem ipsum dolor sit amet</h2><hr />
+			<ol>
+				<li>consectetur adipiscing elit</li>
+				<li>Quisque molestie pharetra odio quis ultrices.</li>
+				<li>Donec dignissim aliquam orci eget congue.</li>
+			</ol>
+			<p>Donec varius tempor augue non malesuada. Suspendisse sollicitudin risus non metus varius,
+			eget commodo lectus imperdiet. Mauris accumsan risus nibh, ac varius diam iaculis quis. Sed at arcu massa. Suspendisse potenti.
+			Fusce at eros nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae molestie eros,
+			a tristique nisl. <a href="#">Read more...</a></p>
+			<footer class="c6">
+				<div class="post-cat lf">
+				<p>Categories: <a href="#">Category 1</a>, <a href="#">Category 2</a>, <a href="#">Category 3</a></p>
+				</div>
+				<div class="post-social rf">
+				<p>Share this post:</p>
+					<div class="btn-share"><a href="#"><i class="fa fa-facebook"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-twitter"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-reddit"></i></a></div>
 				</div>
 			</footer>
 		</article>
 	</main>
 
-	<section class="sidebar">
+	<section class="sidebar c8">
+		<!-- 220 px minimum here before ad -->
+		<div class="widget spacer">
+		</div>
+		<div class="widget spacer c9">
+		</div>
+		<div class="widget spacer">
+		</div>
 		<div class="widget">
-		<img src="http://placehold.it/300x250">
+		<img src="http://placehold.it/300x250&text=Ad+Space+-+300+x+250">
+		</div>
+		<div class="widget spacer">
+		</div>
+		<div class="widget spacer c9">
 		</div>
 	</section>
+</div>
 
-	<footer class="cf">
+	<footer class="cf c9">
+		<div class="spacer">
+		</div>
 	</footer>
 
 	<div class="scripts offscreen">
