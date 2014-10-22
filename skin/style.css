@@ -83,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+	/*clear: both;*/
 	font-weight: 700;
 	margin: 12px 0 12px;
 }
@@ -440,12 +440,95 @@ body {
 }
 
 
+.search form {
+	width: 240px; /* same as social */
+	margin: 6px auto 2px auto;
+	height: 31px;
+	display: relative;
+}
+
+.in-search, .btn-search {
+	border: 0;
+	padding: 2px 5px;
+	background: #F5F5F5;
+	border-style: solid;
+	border-color: #666;
+	height: 25px;
+	float: left;
+}
+
+.in-search {
+	border-width: 1px 0px 1px 1px;
+	width: 210px;
+	font-size: 14px;
+}
+
+.btn-search {
+	border-width: 1px 1px 1px 0px;
+	width: 30px;
+	font-size: 16px;
+}
+
+
+.btn-share {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	float: left;
+}
+
+.btn-share a {
+	display: block;
+	text-decoration: none;
+	color: #2B2B2B;
+	padding-top: 4px;
+	padding-bottom: 1px;
+}
+
+.btn-share a i {
+	font-size: 24px;
+}
+
+.btn-social {
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	float: left;
+}
+
+.btn-social a {
+	display: block;
+	text-decoration: none;
+	color: #2B2B2B;
+	padding: 5px 0px;
+}
+
+.btn-social a i {
+	font-size: 36px;
+}
+
+.primary ul {
+	margin: 0;
+}
+
+.primary ul li {
+	list-style: none;
+}
+
+.primary ul li a {
+	display: block;
+	text-decoration: none;
+	color: #676767;
+	font-size: 20px;
+	
+}
+
 /*
  * Responsive Styles > Mobile
  * -----------------------------------------------------------------------------
  */
 
-.desktop {
+.tablet, .desktop, #primary {
 	display: none;
 }
 
@@ -456,7 +539,50 @@ main {
 article img {
 	max-width: 100%;
 }
+
+.primary ul li {
+	text-align: center;
+	height: 30px;
+}
+
+.titlebar {
+	border-bottom: 1px solid #666;
+	text-align: center;
+}
+
+.titlebar h1 {
+	margin: 0;
+}
+
+.titlebar i {
+	font-size: 30px;
+	position: absolute;
+	top: 2px;
+	right: 8px;
+}
+
+.titlebar a {
+	display: block;
+	text-decoration: none;
+	color: #676767;
+}
+
+ /*
+  * Responsive Styles > Tablet
+  * -----------------------------------------------------------------------------
+  */
  
+@media screen and (min-width:720px) {
+
+.tablet {
+	display: block;
+}
+
+#primary {
+	display: table;
+}
+}
+
 /*
  * Responsive Styles > Desktop
  * -----------------------------------------------------------------------------
@@ -467,6 +593,10 @@ article img {
 body {
 	width: 1280px;
 	margin: 0px auto;
+}
+
+.mobile {
+	display: none;
 }
 
 .desktop {
@@ -508,18 +638,13 @@ body {
 	margin: 0px auto;
 }
 
-
-.primary ul {
-	margin: 0;
-}
-
-.primary ul li, .secondary ul li {
-	list-style: none;
-	float: left;
-}
-
 .secondary {
 	width: 100%;
+}
+
+.secondary ul li {
+	list-style: none;
+	float: left;
 }
 
 .secondary > ul li {
@@ -632,13 +757,6 @@ Secondary Flyout
 /***********************/
 
 
-.primary ul li a {
-	display: block;
-	text-decoration: none;
-	color: #676767;
-	font-size: 20px;
-	
-}
 
 .primary {
 	display: table;
@@ -670,35 +788,6 @@ Secondary Flyout
 	float: left;
 }
 
-.search form {
-	width: 240px; /* same as social */
-	margin: 6px auto 2px auto;
-	height: 31px;
-	display: relative;
-}
-
-.in-search, .btn-search {
-	border: 0;
-	padding: 2px 5px;
-	background: #F5F5F5;
-	border-style: solid;
-	border-color: #666;
-	height: 25px;
-	float: left;
-}
-
-.in-search {
-	border-width: 1px 0px 1px 1px;
-	width: 210px;
-	font-size: 14px;
-}
-
-.btn-search {
-	border-width: 1px 1px 1px 0px;
-	width: 30px;
-	font-size: 16px;
-}
-
 .post-social {
 	float: right;
 }
@@ -710,42 +799,6 @@ Secondary Flyout
 	height: 32px;
 }
 
-.btn-share {
-	width: 32px;
-	height: 32px;
-	text-align: center;
-	float: left;
-}
-
-.btn-share a {
-	display: block;
-	text-decoration: none;
-	color: #2B2B2B;
-	padding-top: 4px;
-	padding-bottom: 1px;
-}
-
-.btn-share a i {
-	font-size: 24px;
-}
-
-.btn-social {
-	width: 48px;
-	height: 48px;
-	text-align: center;
-	float: left;
-}
-
-.btn-social a {
-	display: block;
-	text-decoration: none;
-	color: #2B2B2B;
-	padding: 5px 0px;
-}
-
-.btn-social a i {
-	font-size: 36px;
-}
 
 #content {
 	float: left;

@@ -20,7 +20,11 @@
 <body>
 	<header id="top">
 		<div class="hero">
-			<div class="logo demo c2">
+			<div class="titlebar mobile c1">
+				<a href="#" onclick="ToggleMenu('primary');"><i class="rf fa fa-reorder"></i></a>
+				<h1>Site Name</h1>
+			</div>
+			<div class="logo tablet demo c2">
 				<img src="http://placehold.it/260x90/000000/&text=Logo+-+260x90">
 				Logo
 			</div>
@@ -34,7 +38,7 @@
 						<button class="btn-search" type="Submit"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
-				<div class="social cf">
+				<div class="social tablet cf">
 					<div class="btn-social"><a href="#"><i class="fa fa-facebook"></i></a></div>
 					<div class="btn-social"><a href="#"><i class="fa fa-twitter"></i></a></div>
 					<div class="btn-social"><a href="#"><i class="fa fa-google-plus"></i></a></div>
@@ -44,7 +48,7 @@
 			</div>
 		</div>
 
-		<nav class="primary cf"> <!-- PRIMARY NAV, accomodates 4-10 links -->
+		<nav id="primary" class="primary cf"> <!-- PRIMARY NAV, accomodates 4-10 links -->
 			<ul>
 				<li class="c13"><a href="#">Item 1</a></li>
 				<li class="c12"><a href="#">Item 2</a></li>
@@ -404,9 +408,7 @@
 
 	<div class="scripts offscreen">
 		<!--[if gte IE 8]><!-->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-       		<script>window.jQuery || document.write('<script type="text/javascript" src="/js/jquery.min.js"><\/script>')</script>
-		<script type="text/javascript" src="/js/functions.js"></script>
+		<script type="text/javascript" src="functions.js"></script>
 		<!--<![endif]-->
 	</div>
 </body>
