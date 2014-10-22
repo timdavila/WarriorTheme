@@ -418,7 +418,7 @@ hr {
 */
 
 /*
- * Styles
+ * Global Styles
  * -----------------------------------------------------------------------------
  */
 
@@ -437,10 +437,42 @@ hr {
 body {	
 	font-family: 'Signika', sans-serif;
 	font-size: 16px;
+}
+
+
+/*
+ * Responsive Styles > Mobile
+ * -----------------------------------------------------------------------------
+ */
+
+.desktop {
+	display: none;
+}
+
+main {
+	width: 100%;
+}
+
+article img {
+	max-width: 100%;
+}
+ 
+/*
+ * Responsive Styles > Desktop
+ * -----------------------------------------------------------------------------
+ */
+
+@media screen and (min-width:1280px) {
+
+body {
 	width: 1280px;
 	margin: 0px auto;
 }
-    	
+
+.desktop {
+	display: block;
+}
+
 .logo, .hero-ad, .hero-meta {
 	float: left;
 	height: 90px;
@@ -667,6 +699,10 @@ Secondary Flyout
 	font-size: 16px;
 }
 
+.post-social {
+	float: right;
+}
+
 .post-social p {
 	display: inline-block;
 	float: left;
@@ -764,6 +800,7 @@ footer {
 	margin: 0px 0;
 }
 
+}
 /*
  * Colors (Demo)
  * -----------------------------------------------------------------------------
