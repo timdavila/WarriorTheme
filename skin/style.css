@@ -734,6 +734,21 @@ main {
 	height: 100%;
 }
 
+footer {
+	width: 100%;
+	display: block;
+}
+
+.foot-col {
+	float: left;
+	width: 250px;
+	font-size: 14px;
+}
+
+.foot-col ul {
+	list-style: none;
+}
+
 .sidebar {
 	float: right;
 	height: 100%;
