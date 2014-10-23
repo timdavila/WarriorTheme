@@ -28,7 +28,7 @@
 				<img src="http://placehold.it/260x90/000000/&text=Logo+-+260x90">
 				Logo
 			</div>
-			<div class="hero-ad tablet demo c3">
+			<div class="hero-ad tablet">
 				<img src="http://placehold.it/728x90&text=Ad+Space+-+728+x+90">
 			</div>
 			<div class="hero-meta">
@@ -46,6 +46,17 @@
 					<div class="btn-social"><a href="#"><i class="fa fa-rss"></i></a></div>
 				</div>
 			</div>
+			<div class="menubar tablet c14">
+				<div class="btn-menu m1">
+					<a id="btn-1" class="btn-reg" href="#" onclick="ToggleMenu('primary');ToggleHighlight('btn-1');">Menu 1</a>
+				</div>
+				<div class="btn-menu m2">
+					<a id="btn-2" class="btn-reg" href="#" onclick="ToggleMenu('second');ToggleHighlight('btn-2');">Menu 2</a>
+				</div>
+				<div class="btn-menu m3">
+					<a id="btn-3" class="btn-reg" href="#" onclick="ToggleMenu('third');ToggleHighlight('btn-3');">Menu 3</a>
+				</div>
+			</div>
 		</div>
 
 		<nav id="primary" class="primary cf"> <!-- PRIMARY NAV, accomodates 4-10 links -->
@@ -59,6 +70,17 @@
 				<li class="c13"><a href="#">Item 7</a></li>
 			</ul>
 		</nav>
+
+		<div class="mobile search">
+			<form>
+				<input class="in-search" type="text" label="Search" placeholder="Search this site..." required />
+				<button class="btn-search" type="Submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+
+		<div class="hero-ad mobile">
+				<img src="http://placehold.it/300x90&text=Ad+Space+-+300x90">
+		</div>
 
 		<nav class="secondary desktop cf c4">
 			<ul>
@@ -297,7 +319,58 @@
 				<li><a href="#"></a></li> <!-- 19 -->
 			</ul>
 		</nav>
-
+		<div class="btn-menu mobile m1">
+			<i id="icn-1" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('second');SwapIcon('icn-1');">Menu 2</a>
+		</div>
+		<nav id="second" class="primary cf"> <!-- ANCILLARY NAV, accomodates 2+ links -->
+			<ul>
+				<li class="c10"><a href="#">Item 1 (Nav 2)</a></li>
+				<li class="c11"><a href="#">Item 2</a></li>
+				<li class="c10"><a href="#">Item 3</a></li>
+				<li class="c11"><a href="#">Item 4</a></li>
+				<li class="c10"><a href="#">Item 5</a></li>
+				<li class="c11"><a href="#">Item 6</a></li>
+				<li class="c10"><a href="#">Item 7</a></li>
+				<li class="c11"><a href="#">Item 8</a></li>
+				<li class="c10"><a href="#">Item 9</a></li>
+				<li class="c11"><a href="#">Item 10</a></li>
+				<li class="c10"><a href="#">Item 11</a></li>
+				<li class="c11"><a href="#">Item 12</a></li>
+				<li class="c10"><a href="#">Item 13</a></li>
+				<li class="c11"><a href="#">Item 14</a></li>
+				<li class="c10"><a href="#">Item 15</a></li>
+				<li class="c11"><a href="#">Item 16</a></li>
+				<li class="c10"><a href="#">Item 17</a></li>
+				<li class="c11"><a href="#">Item 18</a></li>
+				<li class="c10"><a href="#">Item 19</a></li>
+			</ul>
+		</nav>
+		<div class="btn-menu mobile">
+			<i id="icn-2" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('third');SwapIcon('icn-2');">Menu 3</a>
+		</div>
+		<nav id="third" class="primary cf"> <!-- ANCILLARY NAV, accomodates 2+ links -->
+			<ul>
+				<li class="c8"><a href="#">Item 1 (Nav 3)</a></li>
+				<li class="c9"><a href="#">Item 2</a></li>
+				<li class="c8"><a href="#">Item 3</a></li>
+				<li class="c9"><a href="#">Item 4</a></li>
+				<li class="c8"><a href="#">Item 5</a></li>
+				<li class="c9"><a href="#">Item 6</a></li>
+				<li class="c8"><a href="#">Item 7</a></li>
+				<li class="c9"><a href="#">Item 8</a></li>
+				<li class="c8"><a href="#">Item 9</a></li>
+				<li class="c9"><a href="#">Item 10</a></li>
+				<li class="c8"><a href="#">Item 11</a></li>
+				<li class="c9"><a href="#">Item 12</a></li>
+				<li class="c8"><a href="#">Item 13</a></li>
+				<li class="c9"><a href="#">Item 14</a></li>
+				<li class="c8"><a href="#">Item 15</a></li>
+				<li class="c9"><a href="#">Item 16</a></li>
+				<li class="c8"><a href="#">Item 17</a></li>
+				<li class="c9"><a href="#">Item 18</a></li>
+				<li class="c8"><a href="#">Item 19</a></li>
+			</ul>
+		</nav>
 	</header>
 
 <div class="sitewrap">
@@ -324,6 +397,7 @@
 					<div class="btn-share"><a href="#"><i class="fa fa-google-plus"></i></a></div>
 					<div class="btn-share"><a href="#"><i class="fa fa-reddit"></i></a></div>
 				</div>
+				<div class="cf"></div>
 			</footer>
 		</article>
 
@@ -354,6 +428,7 @@
 					<div class="btn-share"><a href="#"><i class="fa fa-google-plus"></i></a></div>
 					<div class="btn-share"><a href="#"><i class="fa fa-reddit"></i></a></div>
 				</div>
+				<div class="cf"></div>
 			</footer>
 		</article>
 		<!--
