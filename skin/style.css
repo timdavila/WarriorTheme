@@ -528,7 +528,9 @@ body {
  * -----------------------------------------------------------------------------
  */
 
-.tablet, .desktop, #primary {
+@media screen and (max-width:759px) {
+
+.tablet, .desktop, .search, #primary {
 	display: none;
 }
 
@@ -545,7 +547,7 @@ article img {
 	height: 30px;
 }
 
-.titlebar {
+.titlebar, .primary {
 	border-bottom: 1px solid #666;
 	text-align: center;
 }
@@ -566,20 +568,59 @@ article img {
 	text-decoration: none;
 	color: #676767;
 }
+}
 
  /*
   * Responsive Styles > Tablet
   * -----------------------------------------------------------------------------
   */
  
-@media screen and (min-width:720px) {
+@media screen and (min-width:760px) and (max-width:1200px) {
 
-.tablet {
-	display: block;
+.mobile, .desktop {
+	display: none;
 }
 
-#primary {
-	display: table;
+.hero {
+	width: 728px;
+	margin: 0 auto;
+}
+
+.logo, .hero-ad, .hero-meta {
+	height: 90px;
+}
+
+.logo {
+	width: 260px;
+	overflow: hidden;
+	float: left;
+}
+
+.hero-meta {
+	float: right;
+	margin-top: -180px;
+	width: 468px;
+}
+
+.hero-ad {
+	clear: both;
+}
+
+.logo img {
+	max-width: 260px;
+	max-height: 90px;
+}
+
+.search form {
+	width: 460px;
+}
+
+.btn-social {
+	width: 92px;
+}
+
+.in-search {
+	width: 430px;
 }
 }
 
@@ -588,7 +629,7 @@ article img {
  * -----------------------------------------------------------------------------
  */
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1201px) {
 
 body {
 	width: 1280px;
