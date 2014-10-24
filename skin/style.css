@@ -553,7 +553,7 @@ footer {
 	display: none;
 }
 
-.hero-ad {
+.hero-banner {
 	margin: 8px auto;
 	width: 300px;
 }
@@ -652,7 +652,7 @@ article img {
 	margin: 0 auto;
 }
 
-.logo, .hero-ad, .hero-meta {
+.logo, .hero-banner, .hero-meta {
 	height: 90px;
 }
 
@@ -669,7 +669,7 @@ article img {
 	width: 468px;
 }
 
-.hero-ad {
+.hero-banner {
 	clear: both;
 	margin-bottom: 12px;
 }
