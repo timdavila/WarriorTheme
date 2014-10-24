@@ -741,7 +741,7 @@ article footer p {
 
 article img {
 	max-width: 100%;
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 .post-social {
@@ -750,7 +750,7 @@ article img {
 
 .foot-col {
 	float: left;
-	width: 250px;
+	width: 150px;
 	font-size: 14px;
 }
 
@@ -776,7 +776,7 @@ body {
 	display: block;
 }
 
-.logo, .hero-ad, .hero-meta {
+.logo, .hero-banner, .hero-meta {
 	float: left;
 	height: 90px;
 }
@@ -791,12 +791,12 @@ body {
 	max-height: 90px;
 }
 
-.hero-ad {
+.hero-banner {
 	width: 728px;
 	overflow: hidden;
 }
 
-.hero-ad img {
+.hero-banner img {
 	max-width: 728px;
 	max-height: 90px;
 }
