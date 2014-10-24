@@ -542,6 +542,11 @@ footer {
 .foot-col ul {
 	list-style: none;
 }
+
+.widget p {
+	padding: 2px 8px;
+}
+
 /*
  * Responsive Styles > Mobile
  * -----------------------------------------------------------------------------
@@ -778,7 +783,7 @@ body {
 }
 
 .mobile, .menubar, #second, #third {
-	display: none;
+	display: none!important;
 }
 
 .desktop {
@@ -994,6 +999,7 @@ article img {
 article footer {
 	width: 100%;
 	height: 30px;
+	font-size: 14px;
 }
 
 main {
