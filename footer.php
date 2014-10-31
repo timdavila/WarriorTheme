@@ -17,17 +17,18 @@
 
 			<?php get_sidebar( 'footer' ); ?>
 
-			<div class="site-info">
-				<?php do_action( 'warriortheme_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'warriortheme' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'warriortheme' ), 'WordPress' ); ?></a>
-			</div>
-
 			<div class="foot-col">
 				<ul>
 					<li><a href="#">Item 1</a></li>
 					<li><a href="#">Item 2</a></li>
 					<li><a href="#">Item 3</a></li>
 				</ul>
+			</div>
+			<div class="foot-col">
+				<p class="copy">
+					&copy; <?php bloginfo( 'name' ); ?> 2014<br />
+					All rights reserved.
+				</p>
 			</div>
 			<div class="cf"></div>
 		</footer>
