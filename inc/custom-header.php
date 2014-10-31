@@ -1,6 +1,6 @@
 <?php
 /**
- * Implement Custom Header functionality for Twenty Fourteen
+ * Implement Custom Header functionality for Warrior Theme
  *
  * @package WordPress
  * @subpackage Warrior_Theme
@@ -18,7 +18,7 @@
  */
 function warriortheme_custom_header_setup() {
 	/**
-	 * Filter Twenty Fourteen custom-header support arguments.
+	 * Filter Warrior Theme custom-header support arguments.
 	 *
 	 * @since Warrior Theme 0.1
 	 *

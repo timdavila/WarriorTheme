@@ -37,7 +37,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 /**
- * Twenty Fourteen only works in WordPress 3.6 or later.
+ * Warrior Theme only works in WordPress 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -45,7 +45,7 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) ) {
 
 if ( ! function_exists( 'warriortheme_setup' ) ) :
 /**
- * Twenty Fourteen setup.
+ * Warrior Theme setup.
  *
  * Set up theme defaults and registers support for various WordPress features.
  *
@@ -58,12 +58,9 @@ if ( ! function_exists( 'warriortheme_setup' ) ) :
 function warriortheme_setup() {
 
 	/*
-	 * Make Twenty Fourteen available for translation.
+	 * Make Warrior Theme available for translation.
 	 *
 	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on Twenty Fourteen, use a find and
-	 * replace to change 'warriortheme' to the name of your theme in all
-	 * template files.
 	 */
 	load_theme_textdomain( 'warriortheme', get_template_directory() . '/languages' );
 
@@ -80,8 +77,8 @@ function warriortheme_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'primary'   => __( 'Top primary menu', 'warriortheme' ),
-		'secondary' => __( 'Secondary menu in left sidebar', 'warriortheme' ),
+		'primary'   => __( 'Primary menu', 'warriortheme' ),
+		'secondary' => __( 'Secondary menu', 'warriortheme' ),
 	) );
 
 	/*
@@ -138,7 +135,7 @@ add_action( 'template_redirect', 'warriortheme_content_width' );
  */
 function warriortheme_get_featured_posts() {
 	/**
-	 * Filter the featured posts to return in Twenty Fourteen.
+	 * Filter the featured posts to return in Warrior Theme.
 	 *
 	 * @since Warrior Theme 0.1
 	 *
@@ -159,7 +156,7 @@ function warriortheme_has_featured_posts() {
 }
 
 /**
- * Register three Twenty Fourteen widget areas.
+ * Register three Warrior Theme widget areas.
  *
  * @since Warrior Theme 0.1
  */
@@ -198,7 +195,7 @@ function warriortheme_widgets_init() {
 add_action( 'widgets_init', 'warriortheme_widgets_init' );
 
 /**
- * Register Lato Google font for Twenty Fourteen.
+ * Register Lato Google font for Warrior Theme.
  *
  * @since Warrior Theme 0.1
  *
@@ -279,7 +276,7 @@ if ( ! function_exists( 'warriortheme_the_attached_image' ) ) :
 function warriortheme_the_attached_image() {
 	$post                = get_post();
 	/**
-	 * Filter the default Twenty Fourteen attachment size.
+	 * Filter the default Warrior Theme attachment size.
 	 *
 	 * @since Warrior Theme 0.1
 	 *
