@@ -9,8 +9,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<!-- template single.php -->
+
+<div class="sitewrap">
+	<main id="content" role="main">
+
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -31,10 +34,9 @@ get_header(); ?>
 					}
 				endwhile;
 			?>
-		</div><!-- #content -->
-	</div><!-- #primary -->
+	<?php get_sidebar( 'content' ); ?>
+</main>
 
 <?php
-get_sidebar( 'content' );
 get_sidebar();
-get_footer();
+get_footer(); ?>
