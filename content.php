@@ -66,6 +66,7 @@
 				<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'warriortheme' ) ); ?></span>
 			</div>
 
+			<?php endif; ?>
 
 			<div class="post-social">
 				<p>Share this post:</p>
