@@ -7,9 +7,9 @@
  * @since Warrior Theme 0.1
  */
 
-<!-- template full-width.php -->
-
 get_header(); ?>
+
+<!-- template full-width.php -->
 
 <div id="main-content" class="main-content">
 

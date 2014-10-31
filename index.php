@@ -14,9 +14,9 @@
  * @since Warrior Theme 0.1
  */
 
-<!-- template index.php -->
-
 get_header(); ?>
+
+<!-- template index.php -->
 
 <div class="sitewrap">
 	<main id="content" role="main">
