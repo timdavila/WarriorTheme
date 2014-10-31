@@ -391,3 +391,6 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 				<?php get_search_form(); ?>
 	-->
+
+
+<!-- eof header.php -->

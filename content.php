@@ -22,12 +22,12 @@
 				the_title( '<h1><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			endif;
 		?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<?php if ( is_search() ) : ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div>
 	<?php else : ?>
 	<div class="entry-content">
 		<?php
@@ -39,7 +39,7 @@
 				'link_after'  => '</span>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 	<?php endif; ?>
 	<footer class="entry-meta">
 
@@ -57,7 +57,7 @@
 
 					edit_post_link( __( 'Edit', 'warriortheme' ), '<span class="edit-link">', '</span>' );
 				?>
-		</div><!-- .entry-meta -->
+		</div>
 
 	<?php the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
 
@@ -77,4 +77,6 @@
 			</div>
 			<div class="cf"></div>
 	</footer>
-</article><!-- #post-## -->
+</article>
+
+<!-- eof content.php -->

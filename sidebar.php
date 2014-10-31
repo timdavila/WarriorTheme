@@ -7,6 +7,8 @@
  * @since Warrior Theme 0.1
  */
 ?>
+
+<!-- sidebar.php -->
 <div id="secondary">
 	<?php
 		$description = get_bloginfo( 'description', 'display' );
@@ -27,3 +29,5 @@
 	</div><!-- #primary-sidebar -->
 	<?php endif; ?>
 </div><!-- #secondary -->
+
+<!-- eof sidebar.php -->

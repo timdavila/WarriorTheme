@@ -10,6 +10,7 @@
  */
 ?>
 
+<!-- footer.php -->
 		</div><!-- #main -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
@@ -26,3 +27,6 @@
 	<?php wp_footer(); ?>
 </body>
 </html>
+
+
+<!-- eof footer.php -->
