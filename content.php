@@ -9,6 +9,45 @@
  * @since Warrior Theme 0.1
  */
 ?>
+<!-- content.php -->
+
+
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<header>
+				if ( is_single() ) :
+					the_title( '<h1 class="entry-title">', '</h1>' );
+				else :
+					the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+				endif;
+				<p>Posted on October 19, 2014 by Tim Davila</p>
+				<p>
+					if ( 'post' == get_post_type() )
+					warriortheme_posted_on();
+			</header>
+
+			<img src="http://lorempixel.com/1000/400" />
+			<?php warriortheme_post_thumbnail(); ?>
+
+			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Quisque molestie pharetra odio quis ultrices.
+			Donec dignissim aliquam orci eget congue. Donec varius tempor augue non malesuada. Suspendisse sollicitudin risus non metus varius,
+			eget commodo lectus imperdiet. Mauris accumsan risus nibh, ac varius diam iaculis quis. Sed at arcu massa. Suspendisse potenti.
+			Fusce at eros nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae molestie eros,
+			a tristique nisl. <a href="#">Read more...</a></p>
+			<footer>
+				<div class="post-cat lf">
+				<p>Categories: <a href="#">Category 1</a>, <a href="#">Category 2</a>, <a href="#">Category 3</a></p>
+				</div>
+				<div class="post-social">
+				<p>Share this post:</p>
+					<div class="btn-share"><a href="#"><i class="fa fa-facebook"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-twitter"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+					<div class="btn-share"><a href="#"><i class="fa fa-reddit"></i></a></div>
+				</div>
+				<div class="cf"></div>
+			</footer>
+		</article>
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php warriortheme_post_thumbnail(); ?>

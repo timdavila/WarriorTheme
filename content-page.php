@@ -7,7 +7,7 @@
  * @since Warrior Theme 0.1
  */
 ?>
-
+<!-- content-page.php -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		// Page thumbnail and title.
