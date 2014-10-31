@@ -16,7 +16,8 @@
 
 get_header(); ?>
 
-<div id="main-content" class="main-content">
+<div class="sitewrap">
+	<main id="content">
 
 <?php
 	if ( is_front_page() && warriortheme_has_featured_posts() ) {
@@ -25,8 +26,8 @@ get_header(); ?>
 	}
 ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<!--<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">-->
 
 		<?php
 			if ( have_posts() ) :
@@ -50,12 +51,14 @@ get_header(); ?>
 
 			endif;
 		?>
-
-		</div><!-- #content -->
+<!--
+		</div><!-- #content
 	</div><!-- #primary -->
 	<?php get_sidebar( 'content' ); ?>
-</div><!-- #main-content -->
+</main><!-- #content -->
 
 <?php
 get_sidebar();
-get_footer();
+get_footer(); ?>
+
+</div>

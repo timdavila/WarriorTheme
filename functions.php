@@ -62,10 +62,10 @@ function warriortheme_setup() {
 	 *
 	 * Translations can be added to the /languages/ directory.
 	 */
-	load_theme_textdomain( 'warriortheme', get_template_directory() . '/languages' );
+//	load_theme_textdomain( 'warriortheme', get_template_directory() . '/languages' );
 
 	// This theme styles the visual editor to resemble the theme style.
-	add_editor_style( array( 'css/editor-style.css', warriortheme_font_url(), 'genericons/genericons.css' ) );
+//	add_editor_style( array( 'css/editor-style.css', warriortheme_font_url(), 'genericons/genericons.css' ) );
 
 	// Add RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -103,13 +103,13 @@ function warriortheme_setup() {
 	) ) );
 
 	// Add support for featured content.
-	add_theme_support( 'featured-content', array(
-		'featured_content_filter' => 'warriortheme_get_featured_posts',
-		'max_posts' => 6,
+//	add_theme_support( 'featured-content', array(
+//		'featured_content_filter' => 'warriortheme_get_featured_posts',
+//		'max_posts' => 6,
 	) );
 
 	// This theme uses its own gallery styles.
-	add_filter( 'use_default_gallery_style', '__return_false' );
+//	add_filter( 'use_default_gallery_style', '__return_false' );
 }
 endif; // warriortheme_setup
 add_action( 'after_setup_theme', 'warriortheme_setup' );
@@ -221,39 +221,39 @@ function warriortheme_font_url() {
  */
 function warriortheme_scripts() {
 	// Add Lato font, used in the main stylesheet.
-	wp_enqueue_style( 'warriortheme-lato', warriortheme_font_url(), array(), null );
+//	wp_enqueue_style( 'warriortheme-lato', warriortheme_font_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
+//	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
 
 	// Load our main stylesheet.
-	wp_enqueue_style( 'warriortheme-style', get_stylesheet_uri(), array( 'genericons' ) );
+//	wp_enqueue_style( 'warriortheme-style', get_stylesheet_uri(), array( 'genericons' ) );
 
 	// Load the Internet Explorer specific stylesheet.
-	wp_enqueue_style( 'warriortheme-ie', get_template_directory_uri() . '/css/ie.css', array( 'warriortheme-style', 'genericons' ), '20131205' );
-	wp_style_add_data( 'warriortheme-ie', 'conditional', 'lt IE 9' );
+//	wp_enqueue_style( 'warriortheme-ie', get_template_directory_uri() . '/css/ie.css', array( 'warriortheme-style', 'genericons' ), '20131205' );
+//	wp_style_add_data( 'warriortheme-ie', 'conditional', 'lt IE 9' );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+//	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+//		wp_enqueue_script( 'comment-reply' );
+//	}
 
-	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( 'warriortheme-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
-	}
+//	if ( is_singular() && wp_attachment_is_image() ) {
+//		wp_enqueue_script( 'warriortheme-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
+//	}
 
-	if ( is_active_sidebar( 'sidebar-3' ) ) {
-		wp_enqueue_script( 'jquery-masonry' );
-	}
+//	if ( is_active_sidebar( 'sidebar-3' ) ) {
+//		wp_enqueue_script( 'jquery-masonry' );
+//	}
 
-	if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
-		wp_enqueue_script( 'warriortheme-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery' ), '20131205', true );
-		wp_localize_script( 'warriortheme-slider', 'featuredSliderDefaults', array(
-			'prevText' => __( 'Previous', 'warriortheme' ),
-			'nextText' => __( 'Next', 'warriortheme' )
-		) );
-	}
+//	if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
+//		wp_enqueue_script( 'warriortheme-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery' ), '20131205', true );
+//		wp_localize_script( 'warriortheme-slider', 'featuredSliderDefaults', array(
+//			'prevText' => __( 'Previous', 'warriortheme' ),
+//			'nextText' => __( 'Next', 'warriortheme' )
+//		) );
+//	}
 
-	wp_enqueue_script( 'warriortheme-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20140616', true );
+	wp_enqueue_script( 'warriortheme-script', get_template_directory_uri() . '/js/functions.js', array(), '20141030', true );
 }
 add_action( 'wp_enqueue_scripts', 'warriortheme_scripts' );
 
@@ -262,10 +262,10 @@ add_action( 'wp_enqueue_scripts', 'warriortheme_scripts' );
  *
  * @since Warrior Theme 0.1
  */
-function warriortheme_admin_fonts() {
-	wp_enqueue_style( 'warriortheme-lato', warriortheme_font_url(), array(), null );
-}
-add_action( 'admin_print_scripts-appearance_page_custom-header', 'warriortheme_admin_fonts' );
+//function warriortheme_admin_fonts() {
+//	wp_enqueue_style( 'warriortheme-lato', warriortheme_font_url(), array(), null );
+//}
+//add_action( 'admin_print_scripts-appearance_page_custom-header', 'warriortheme_admin_fonts' );
 
 if ( ! function_exists( 'warriortheme_the_attached_image' ) ) :
 /**
