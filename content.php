@@ -16,8 +16,6 @@
 
 	<header class="entry-header">
 		<?php
-			endif;
-
 			if ( is_single() ) :
 				the_title( '<h1>', '</h1>' );
 			else :
