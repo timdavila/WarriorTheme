@@ -379,11 +379,8 @@
 	</header>
 	<!--
 
-				<?php _e( 'Search', 'warriortheme' ); ?>
-				<?php _e( 'Primary Menu', 'warriortheme' ); ?>
 				<?php _e( 'Skip to content', 'warriortheme' ); ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-				<?php get_search_form(); ?>
 	-->
 
 
