@@ -46,10 +46,7 @@
 			</div>
 			<div class="hero-meta">
 				<div class="search">
-					<form ~>
-						<input class="in-search" type="text" label="Search" placeholder="Search this site..." required />
-						<button class="btn-search" type="Submit"><i class="fa fa-search"></i></button>
-					</form>
+					<?php get_search_form(); ?>
 				</div>
 				<div class="social tablet cf">
 					<div class="btn-social"><a href="#"><i class="fa fa-facebook"></i></a></div>
@@ -85,10 +82,7 @@
 		</nav>
 
 		<div class="mobile search">
-			<form>
-				<input class="in-search" type="text" label="Search" placeholder="Search this site..." required />
-				<button class="btn-search" type="Submit"><i class="fa fa-search"></i></button>
-			</form>
+			<?php get_search_form(); ?>
 		</div>
 
 		<div class="hero-banner mobile">
