@@ -227,7 +227,7 @@ function warriortheme_scripts() {
 //	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
 
 	// Load our main stylesheet.
-//	wp_enqueue_style( 'warriortheme-style', get_stylesheet_uri(), array( 'genericons' ) );
+	wp_enqueue_style( 'warriortheme-style', get_stylesheet_uri(), array() );
 
 	// Load the Internet Explorer specific stylesheet.
 //	wp_enqueue_style( 'warriortheme-ie', get_template_directory_uri() . '/css/ie.css', array( 'warriortheme-style', 'genericons' ), '20131205' );

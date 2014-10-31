@@ -14,15 +14,18 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header>
+				<?php
 				if ( is_single() ) :
 					the_title( '<h1 class="entry-title">', '</h1>' );
 				else :
 					the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
-				endif;
+				endif; ?>
 				<p>Posted on October 19, 2014 by Tim Davila</p>
 				<p>
+				<?php
 					if ( 'post' == get_post_type() )
 					warriortheme_posted_on();
+					?>
 			</header>
 
 			<img src="http://lorempixel.com/1000/400" />
