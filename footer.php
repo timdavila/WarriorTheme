@@ -11,20 +11,30 @@
 ?>
 
 <!-- footer.php -->
-		</div><!-- #main -->
+		</div>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer class="site-footer cf" role="contentinfo">
 
 			<?php get_sidebar( 'footer' ); ?>
 
 			<div class="site-info">
 				<?php do_action( 'warriortheme_credits' ); ?>
 				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'warriortheme' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'warriortheme' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-	</div><!-- #page -->
+			</div>
 
-	<?php wp_footer(); ?>
+			<div class="foot-col">
+				<ul>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+				</ul>
+			</div>
+			<div class="cf"></div>
+		</footer>
+
+		<div class="scripts offscreen">
+		<?php wp_footer(); ?>
+		</div>
 </body>
 </html>
 
