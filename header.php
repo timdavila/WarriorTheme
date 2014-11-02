@@ -68,7 +68,7 @@
 			</div>
 		</div>
 
-		?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'primary', 'container_class' => 'primary cf'  ) ); ?> <!-- PRIMARY NAV (dynamic) This should output same as below: -->
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'primary', 'container_class' => 'primary cf'  ) ); ?> <!-- PRIMARY NAV (dynamic) This should output same as below: -->
 
 		<nav id="primary" class="primary cf"> <!-- PRIMARY NAV, accomodates 4-10 links -->
 			<ul>
