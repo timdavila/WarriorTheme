@@ -36,8 +36,7 @@
 			</div>
 			<div class="logo tablet demo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?> logo">
-					<!--<img src="http://placehold.it/260x90/000000/&text=Logo+-+260x90">-->
+					<img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?> logo">
 				</a>
 			</div>
 			<div class="hero-banner tablet">
