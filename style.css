@@ -640,71 +640,9 @@ div.wp-caption.alignright .wp-caption-text {
 	padding: 0;
 }
 
-/* Assistive text */
-
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	text-decoration: none;
-	text-transform: none;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar */
-}
-
 .hide {
 	display: none;
 }
-
-/* Clearing floats */
-
-.footer-sidebar:before,
-.footer-sidebar:after,
-.hentry:before,
-.hentry:after,
-.gallery:before,
-.gallery:after,
-.slider-direction-nav:before,
-.slider-direction-nav:after,
-.contributor-info:before,
-.contributor-info:after,
-.search-box:before,
-.search-box:after,
-[class*="content"]:before,
-[class*="content"]:after,
-[class*="site"]:before,
-[class*="site"]:after {
-	content: "";
-	display: table;
-}
-
-.footer-sidebar:after,
-.hentry:after,
-.gallery:after,
-.slider-direction-nav:after,
-.contributor-info:after,
-.search-box:after,
-[class*="content"]:after,
-[class*="site"]:after {
-	clear: both;
-}
-
 
 
 /**
@@ -836,9 +774,7 @@ body {
 .post-thumbnail {
 	background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;
 	display: block;
-	position: relative;
 	width: 100%;
-	z-index: 0;
 }
 
 a.post-thumbnail:hover {

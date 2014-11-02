@@ -36,10 +36,10 @@ function warriortheme_custom_header_setup() {
 	 * }
 	 */
 	add_theme_support( 'custom-header', apply_filters( 'warriortheme_custom_header_args', array(
-		'default-text-color'     => '000',
 		'width'                  => 260,
 		'height'                 => 90,
 		'flex-height'            => false,
+		'header-text'            => false,
 		'wp-head-callback'       => 'warriortheme_header_style',
 		'admin-head-callback'    => 'warriortheme_admin_header_style',
 		'admin-preview-callback' => 'warriortheme_admin_header_image',
