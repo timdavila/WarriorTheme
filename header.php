@@ -2,7 +2,7 @@
 /**
  * The Header for our theme
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays all of the <head> section and everything up till <main>
  *
  * @package WordPress
  * @subpackage Warrior_Theme
@@ -38,7 +38,6 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?> logo">
 					<!--<img src="http://placehold.it/260x90/000000/&text=Logo+-+260x90">-->
-					<?php bloginfo( 'name' ); ?> Logo
 				</a>
 			</div>
 			<div class="hero-banner tablet">
@@ -68,6 +67,8 @@
 				</div>
 			</div>
 		</div>
+
+		?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'primary', 'container_class' => 'primary cf'  ) ); ?> <!-- PRIMARY NAV (dynamic) This should output same as below: -->
 
 		<nav id="primary" class="primary cf"> <!-- PRIMARY NAV, accomodates 4-10 links -->
 			<ul>

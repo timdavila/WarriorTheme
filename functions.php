@@ -78,7 +78,9 @@ function warriortheme_setup() {
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary'   => __( 'Primary menu', 'warriortheme' ),
-		'secondary' => __( 'Secondary menu', 'warriortheme' ),
+		'gamenav' => __( 'Game navigation (Desktop)', 'warriortheme' ),
+		'games' => __( 'Game list (Mobile)', 'warriortheme' ),
+		'walkthroughs' => __( 'Walkthrough list (Mobile)', 'warriortheme' ),
 	) );
 
 	/*
