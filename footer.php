@@ -15,7 +15,7 @@
 
 		<footer class="site-footer cf" role="contentinfo">
 
-			<?php get_sidebar( 'footer' ); ?>
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
 
 			<div class="foot-col">
 				<ul>

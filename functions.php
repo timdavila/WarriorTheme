@@ -157,7 +157,7 @@ function warriortheme_has_featured_posts() {
 }
 
 /**
- * Register three Warrior Theme widget areas.
+ * Register widget areas.
  *
  * @since Warrior Theme 0.1
  */
@@ -167,17 +167,8 @@ function warriortheme_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar', 'warriortheme' ),
-		'id'            => 'sidebar-1',
-		'description'   => __( 'Main sidebar that appears on the left.', 'warriortheme' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-	register_sidebar( array(
-		'name'          => __( 'Content Sidebar', 'warriortheme' ),
-		'id'            => 'sidebar-2',
-		'description'   => __( 'Additional sidebar that appears on the right.', 'warriortheme' ),
+		'id'            => 'sidebar',
+		'description'   => __( 'Main sidebar that appears on the right.', 'warriortheme' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
@@ -185,10 +176,10 @@ function warriortheme_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'warriortheme' ),
-		'id'            => 'sidebar-3',
-		'description'   => __( 'Appears in the footer section of the site.', 'warriortheme' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'id'            => 'footer-widgets',
+		'description'   => __( 'Appears in the footer of the site.', 'warriortheme' ),
+		'before_widget' => '<div id="%1$s" class="foot-col %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
