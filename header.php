@@ -68,7 +68,9 @@
 			</div>
 		</div>
 
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'primary', 'container_class' => 'primary cf'  ) ); ?> <!-- PRIMARY NAV (dynamic) This should output same as below: -->
+		<!-- Dynamic PRIMARY NAV - Accomodates 4-10 links -->
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'primary', 'container_class' => 'primary cf'  ) ); ?>
+
 
 		<nav id="primary" class="primary cf"> <!-- PRIMARY NAV, accomodates 4-10 links -->
 			<ul>
@@ -328,60 +330,21 @@
 		<div class="btn-menu mobile m1">
 			<i id="icn-1" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('second');SwapIcon('icn-1');">Menu 2</a>
 		</div>
-		<nav id="second" class="primary cf"> <!-- ANCILLARY NAV, accomodates 2+ links -->
-			<ul>
-				<li class="c3"><a href="#">Item 1 (Nav 2)</a></li>
-				<li class="c11"><a href="#">Item 2</a></li>
-				<li class="c3"><a href="#">Item 3</a></li>
-				<li class="c11"><a href="#">Item 4</a></li>
-				<li class="c3"><a href="#">Item 5</a></li>
-				<li class="c11"><a href="#">Item 6</a></li>
-				<li class="c3"><a href="#">Item 7</a></li>
-				<li class="c11"><a href="#">Item 8</a></li>
-				<li class="c3"><a href="#">Item 9</a></li>
-				<li class="c11"><a href="#">Item 10</a></li>
-				<li class="c3"><a href="#">Item 11</a></li>
-				<li class="c11"><a href="#">Item 12</a></li>
-				<li class="c3"><a href="#">Item 13</a></li>
-				<li class="c11"><a href="#">Item 14</a></li>
-				<li class="c3"><a href="#">Item 15</a></li>
-				<li class="c11"><a href="#">Item 16</a></li>
-				<li class="c3"><a href="#">Item 17</a></li>
-				<li class="c11"><a href="#">Item 18</a></li>
-				<li class="c3"><a href="#">Item 19</a></li>
-			</ul>
-		</nav>
+
+		<!-- Dynamic GAME NAV - Accomodates 2+ links -->
+		<?php wp_nav_menu( array( 'theme_location' => 'games', 'container' => 'nav' , 'container_id' => 'second', 'container_class' => 'primary cf'  ) ); ?>
+
 		<div class="btn-menu mobile">
 			<i id="icn-2" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('third');SwapIcon('icn-2');">Menu 3</a>
 		</div>
-		<nav id="third" class="primary cf"> <!-- ANCILLARY NAV, accomodates 2+ links -->
-			<ul>
-				<li class="c2"><a href="#">Item 1 (Nav 3)</a></li>
-				<li class="c7"><a href="#">Item 2</a></li>
-				<li class="c2"><a href="#">Item 3</a></li>
-				<li class="c7"><a href="#">Item 4</a></li>
-				<li class="c2"><a href="#">Item 5</a></li>
-				<li class="c7"><a href="#">Item 6</a></li>
-				<li class="c2"><a href="#">Item 7</a></li>
-				<li class="c7"><a href="#">Item 8</a></li>
-				<li class="c2"><a href="#">Item 9</a></li>
-				<li class="c7"><a href="#">Item 10</a></li>
-				<li class="c2"><a href="#">Item 11</a></li>
-				<li class="c7"><a href="#">Item 12</a></li>
-				<li class="c2"><a href="#">Item 13</a></li>
-				<li class="c7"><a href="#">Item 14</a></li>
-				<li class="c2"><a href="#">Item 15</a></li>
-				<li class="c7"><a href="#">Item 16</a></li>
-				<li class="c2"><a href="#">Item 17</a></li>
-				<li class="c7"><a href="#">Item 18</a></li>
-				<li class="c2"><a href="#">Item 19</a></li>
-			</ul>
-		</nav>
+
+		<!-- Dynamic WALKTHROUGH NAV - Accomodates 2+ links -->
+		<?php wp_nav_menu( array( 'theme_location' => 'walkthroughs', 'container' => 'nav' , 'container_id' => 'third', 'container_class' => 'primary cf'  ) ); ?>
+
 	</header>
 	<!--
 
 				<?php _e( 'Skip to content', 'warriortheme' ); ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 	-->
 
 
