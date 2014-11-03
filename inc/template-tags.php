@@ -54,12 +54,9 @@ function warriortheme_paging_nav() {
 	if ( $links ) :
 
 	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'warriortheme' ); ?></h1>
-		<div class="pagination loop-pagination">
-			<?php echo $links; ?>
-		</div><!-- .pagination -->
-	</nav><!-- .navigation -->
+	<nav class="pagination" role="navigation">
+		<?php echo $links; ?>
+	</nav>
 	<?php
 	endif;
 }
