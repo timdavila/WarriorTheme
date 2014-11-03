@@ -148,22 +148,6 @@ function warriortheme_scripts() {
 	// Load our main stylesheet.
 	wp_enqueue_style( 'warriortheme-style', get_stylesheet_uri(), array() );
 
-	// Load the Internet Explorer specific stylesheet.
-//	wp_enqueue_style( 'warriortheme-ie', get_template_directory_uri() . '/css/ie.css', array( 'warriortheme-style', 'genericons' ), '20131205' );
-//	wp_style_add_data( 'warriortheme-ie', 'conditional', 'lt IE 9' );
-
-//	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-//		wp_enqueue_script( 'comment-reply' );
-//	}
-
-//	if ( is_singular() && wp_attachment_is_image() ) {
-//		wp_enqueue_script( 'warriortheme-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
-//	}
-
-//	if ( is_active_sidebar( 'sidebar-3' ) ) {
-//		wp_enqueue_script( 'jquery-masonry' );
-//	}
-
 	wp_enqueue_script( 'warriortheme-script', get_template_directory_uri() . '/js/functions.js', array(), '20141030', true );
 }
 add_action( 'wp_enqueue_scripts', 'warriortheme_scripts' );

@@ -34,8 +34,7 @@ get_header(); ?>
 					}
 				endwhile;
 			?>
-	<?php get_sidebar( 'content' ); ?>
-</main>
+	</main>
 
 <?php
 get_sidebar();
