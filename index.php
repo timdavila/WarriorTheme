@@ -21,13 +21,6 @@ get_header(); ?>
 <div class="sitewrap">
 	<main id="content" role="main">
 
-<?php
-	if ( is_front_page() && warriortheme_has_featured_posts() ) {
-		// Include the featured content template.
-		get_template_part( 'featured-content' );
-	}
-?>
-
 		<?php
 			if ( have_posts() ) :
 				// Start the Loop.
@@ -50,6 +43,7 @@ get_header(); ?>
 
 			endif;
 		?>
+
 </main>
 
 <?php
