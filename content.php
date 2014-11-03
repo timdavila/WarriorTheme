@@ -21,6 +21,9 @@
 			else :
 				the_title( '<h1><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			endif;
+
+			if ( 'post' == get_post_type() )
+				warriortheme_posted_on();
 		?>
 	</header>
 
@@ -46,9 +49,6 @@
 
 			<div class="entry-meta">
 				<?php
-					if ( 'post' == get_post_type() )
-						warriortheme_posted_on();
-
 					if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 				?>
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'warriortheme' ), __( '1 Comment', 'warriortheme' ), __( '% Comments', 'warriortheme' ) ); ?></span>

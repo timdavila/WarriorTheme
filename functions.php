@@ -57,16 +57,6 @@ if ( ! function_exists( 'warriortheme_setup' ) ) :
  */
 function warriortheme_setup() {
 
-	/*
-	 * Make Warrior Theme available for translation.
-	 *
-	 * Translations can be added to the /languages/ directory.
-	 */
-//	load_theme_textdomain( 'warriortheme', get_template_directory() . '/languages' );
-
-	// This theme styles the visual editor to resemble the theme style.
-//	add_editor_style( array( 'css/editor-style.css', warriortheme_font_url(), 'genericons/genericons.css' ) );
-
 	// Add RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -75,7 +65,7 @@ function warriortheme_setup() {
 	set_post_thumbnail_size( 672, 372, true );
 	add_image_size( 'warriortheme-full-width', 1038, 576, true );
 
-	// This theme uses wp_nav_menu() in two locations.
+	// This theme uses wp_nav_menu() in three locations.
 	register_nav_menus( array(
 		'primary'   => __( 'Primary navigation (all)', 'warriortheme' ),
 		'games' => __( 'Game menu (mobile/tablet)', 'warriortheme' ),
@@ -103,15 +93,6 @@ function warriortheme_setup() {
 		'default-color' => 'f5f5f5',
 	) ) );
 
-	// Add support for featured content.
-//	add_theme_support( 'featured-content', array(
-//		'featured_content_filter' => 'warriortheme_get_featured_posts',
-//		'max_posts' => 6,
-//	) );
-
-	// This theme uses its own gallery styles.
-//	add_filter( 'use_default_gallery_style', '__return_false' );
-}
 endif; // warriortheme_setup
 add_action( 'after_setup_theme', 'warriortheme_setup' );
 
@@ -128,38 +109,8 @@ function warriortheme_content_width() {
 add_action( 'template_redirect', 'warriortheme_content_width' );
 
 /**
- * Getter function for Featured Content Plugin.
- *
- * @since Warrior Theme 0.1
- *
- * @return array An array of WP_Post objects.
- */
-function warriortheme_get_featured_posts() {
-	/**
-	 * Filter the featured posts to return in Warrior Theme.
-	 *
-	 * @since Warrior Theme 0.1
-	 *
-	 * @param array|bool $posts Array of featured posts, otherwise false.
-	 */
-	return apply_filters( 'warriortheme_get_featured_posts', array() );
-}
-
-/**
- * A helper conditional function that returns a boolean value.
- *
- * @since Warrior Theme 0.1
- *
- * @return bool Whether there are featured posts.
- */
-function warriortheme_has_featured_posts() {
-	return ! is_paged() && (bool) warriortheme_get_featured_posts();
-}
-
-/**
  * Register widget areas.
  *
- * @since Warrior Theme 0.1
  */
 function warriortheme_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
@@ -187,36 +138,11 @@ function warriortheme_widgets_init() {
 add_action( 'widgets_init', 'warriortheme_widgets_init' );
 
 /**
- * Register Lato Google font for Warrior Theme.
- *
- * @since Warrior Theme 0.1
- *
- * @return string
- */
-function warriortheme_font_url() {
-	$font_url = '';
-	/*
-	 * Translators: If there are characters in your language that are not supported
-	 * by Lato, translate this to 'off'. Do not translate into your own language.
-	 */
-	if ( 'off' !== _x( 'on', 'Lato font: on or off', 'warriortheme' ) ) {
-		$font_url = add_query_arg( 'family', urlencode( 'Lato:300,400,700,900,300italic,400italic,700italic' ), "//fonts.googleapis.com/css" );
-	}
-
-	return $font_url;
-}
-
-/**
  * Enqueue scripts and styles for the front end.
  *
  * @since Warrior Theme 0.1
  */
 function warriortheme_scripts() {
-	// Add Lato font, used in the main stylesheet.
-//	wp_enqueue_style( 'warriortheme-lato', warriortheme_font_url(), array(), null );
-
-	// Add Genericons font, used in the main stylesheet.
-//	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
 
 	// Load our main stylesheet.
 	wp_enqueue_style( 'warriortheme-style', get_stylesheet_uri(), array() );
@@ -237,33 +163,14 @@ function warriortheme_scripts() {
 //		wp_enqueue_script( 'jquery-masonry' );
 //	}
 
-//	if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
-//		wp_enqueue_script( 'warriortheme-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery' ), '20131205', true );
-//		wp_localize_script( 'warriortheme-slider', 'featuredSliderDefaults', array(
-//			'prevText' => __( 'Previous', 'warriortheme' ),
-//			'nextText' => __( 'Next', 'warriortheme' )
-//		) );
-//	}
-
 	wp_enqueue_script( 'warriortheme-script', get_template_directory_uri() . '/js/functions.js', array(), '20141030', true );
 }
 add_action( 'wp_enqueue_scripts', 'warriortheme_scripts' );
-
-/**
- * Enqueue Google fonts style to admin screen for custom header display.
- *
- * @since Warrior Theme 0.1
- */
-//function warriortheme_admin_fonts() {
-//	wp_enqueue_style( 'warriortheme-lato', warriortheme_font_url(), array(), null );
-//}
-//add_action( 'admin_print_scripts-appearance_page_custom-header', 'warriortheme_admin_fonts' );
 
 if ( ! function_exists( 'warriortheme_the_attached_image' ) ) :
 /**
  * Print the attached image with a link to the next attached image.
  *
- * @since Warrior Theme 0.1
  */
 function warriortheme_the_attached_image() {
 	$post                = get_post();
@@ -379,7 +286,6 @@ endif;
  * 4. Full-width content layout.
  * 5. Presence of footer widgets.
  * 6. Single views.
- * 7. Featured content layout.
  *
  * @since Warrior Theme 0.1
  *
@@ -414,12 +320,6 @@ function warriortheme_body_classes( $classes ) {
 
 	if ( is_singular() && ! is_front_page() ) {
 		$classes[] = 'singular';
-	}
-
-	if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
-		$classes[] = 'slider';
-	} elseif ( is_front_page() ) {
-		$classes[] = 'grid';
 	}
 
 	return $classes;
@@ -492,13 +392,3 @@ require get_template_directory() . '/inc/template-tags.php';
 
 // Add Theme Customizer functionality.
 require get_template_directory() . '/inc/customizer.php';
-
-/*
- * Add Featured Content functionality.
- *
- * To overwrite in a plugin, define your own Featured_Content class on or
- * before the 'setup_theme' hook.
- */
-if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
-	require get_template_directory() . '/inc/featured-content.php';
-}

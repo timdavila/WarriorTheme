@@ -9,6 +9,8 @@
 
 get_header(); ?>
 
+<!-- template contributors.php -->
+
 <div id="main-content" class="main-content">
 
 <?php
