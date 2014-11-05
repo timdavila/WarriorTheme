@@ -650,10 +650,13 @@ div.wp-caption.alignright .wp-caption-text {
  * -----------------------------------------------------------------------------
  */
 
-.site {
-	background-color: #fff;
-	max-width: 1260px;
-	position: relative;
+body {
+	background-color: #94B6E7;
+	background-color: rgba(148,182,231,0.2);
+	
+	/* gradient from 57,97,148 to 148,182,231 */
+	/* gradient from #396194 to #94B6E7 */
+	/* http://www.colorzilla.com/gradient-editor/#396194+0,94b6e7+100;Custom */
 }
 
 .main-content {
@@ -720,32 +723,11 @@ body {
  	font-size: 16px;
 }
  
- /* Social Buttons */
- 
- .btn-social {
- 	width: 48px;
- 	height: 48px;
- 	text-align: center;
- 	float: left;
- }
- 
- .btn-social a {
- 	display: block;
- 	text-decoration: none;
- 	color: #2B2B2B;
- 	padding: 5px 0px;
- }
- 
- .btn-social a i {
- 	font-size: 36px;
- }
- 
 
 /**
  * 6.0 Navigation
  * -----------------------------------------------------------------------------
  */
-
 
  .primary ul {
  	margin: 0;
@@ -753,13 +735,21 @@ body {
  
  .primary ul li {
  	list-style: none;
+	background-color: #396194;
+	box-shadow: inset 0 0 0 0 #396194;
+	transition: all ease 0.4s;
  }
  
+.primary ul li:hover {
+	box-shadow: inset 0 48px 0 0 #FB8B00;
+}
+
  .primary ul li a {
  	display: block;
  	text-decoration: none;
- 	color: #676767;
- 	font-size: 20px;
+ 	text-transform: uppercase; /* todo: remove */
+ 	color: #ffffff;
+ 	font-size: 22px;
  	
  }
 
@@ -772,7 +762,6 @@ body {
 /* Post Thumbnail */
 
 .post-thumbnail {
-	background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;
 	display: block;
 	width: 100%;
 }
@@ -790,6 +779,20 @@ a.post-thumbnail:hover {
 
  article {
  	word-wrap: break-word;
+ }
+ 
+ article header {
+ 	color: #396194;
+ }
+ 
+ .entry-header h1 {
+ 	font-weight: normal;
+ 	font-size: 40px;
+ }
+ 
+ .entry-header a {
+ 	text-decoration: none;
+ 	color: #396194;
  }
  
  /**
@@ -843,61 +846,39 @@ a.post-thumbnail:hover {
 }
 
 /* social buttons in mast head */
-/* colors from simpleicons.org */
 
 .btn-social {
-	background-color: #888;
+	width: 36px;
+	height: 36px;
+	padding: 6px;
+	text-align: center;
+	float: left;
 }
 
-.btn-social.fb {
-	box-shadow: inset 0 0 0 0 #3B5998; /* facebook */
+.btn-social a {
+	display: block;
+	text-decoration: none;
+	background-color: #396194; /* default */
+	width: 36px;
+	height: 36px;
+	border-radius: 36px;
+	box-shadow: 2px 2px #888; /* accent */
 }
 
-.btn-social.fb:hover {
-	box-shadow: inset 0 48px 0 0 #3B5998;
+.btn-social a i {
+	font-size: 24px;
+	color: #ffffff;
+	padding-top: 6px;
 }
 
-.btn-social.tw {
-	box-shadow: inset 0 0 0 0 #00ACED; /* twitter */
+.btn-social:hover a {
+	background-color: #ffffff;
 }
 
-.btn-social.tw:hover {
-	box-shadow: inset 0 48px 0 0 #00ACED;
+.btn-social:hover a i {
+	color: #396194; /* default */
 }
 
-.btn-social.gp {
-	box-shadow: inset 0 0 0 0 #D14836; /* google + */
-}
-
-.btn-social.gp:hover {
-	box-shadow: inset 0 48px 0 0 #D14836;
-}
-
-.btn-social.yt {
-	box-shadow: inset 0 0 0 0 #CD332D; /* youtube */
-}
-
-.btn-social.yt:hover {
-	box-shadow: inset 0 48px 0 0 #CD332D;
-}
-
-.btn-social.rss {
-	box-shadow: inset 0 0 0 0 #FF8300; /* rss */
-}
-
-.btn-social.rss:hover {
-	box-shadow: inset 0 48px 0 0 #FF8300; 
-}
- 
-.btn-social i {
-	color: #fff;
-}
- 
-.btn-social {
-	transition: all ease 0.2s;
-}
- 	
- 
 /**
  * Post Content
  * -----------------------------------------------------------------------------
@@ -1131,7 +1112,12 @@ h1,h2,h3,h4,h5,h6,span,blockquote,code,p {
 }
 
 .btn-social {
-	width: 92px;
+	width: 85px;
+	padding: 4px;
+}
+
+.btn-social a {
+	margin: 0 auto;
 }
 
 .in-search {
@@ -1210,7 +1196,7 @@ article img {
 
 @media screen and (min-width:1201px) {
 
-body {
+.hero, .sitewrap {
 	width: 1280px;
 	margin: 0px auto;
 }
@@ -1274,6 +1260,10 @@ body {
 	height: 60px;
 }
 
+.secondary > ul > li:hover {
+	background: #6B92C6;
+}
+
 .secondary > ul li a {
 	display: block;
 	width: 100%;
@@ -1291,10 +1281,15 @@ Secondary Flyout
 	width: 1140px;
 	height: 260px;
 	position: absolute;
-	background: white;
+	color: #6B92C6;
+	background: #ccc;
 	font-size: 14px;
 }
 
+.flyout a {
+	color: #FB8B00;
+}
+	
 .secondary ul li:nth-of-type(2) .flyout {
 	margin-left: -60px;
 }
