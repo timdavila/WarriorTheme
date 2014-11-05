@@ -804,26 +804,45 @@ a.post-thumbnail:hover {
  	height: 32px;
  }
 
- .btn-share {
- 	width: 32px;
- 	height: 32px;
- 	text-align: center;
- 	float: left;
- }
- 
- .btn-share a {
- 	display: block;
- 	text-decoration: none;
- 	color: #2B2B2B;
- 	padding-top: 4px;
- 	padding-bottom: 1px;
- }
- 
- .btn-share a i {
- 	font-size: 24px;
- }
- 
+/* social share buttons after posts */
+/* colors from simpleicons.org */
 
+.btn-share {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	float: left;
+}
+ 
+.btn-share a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	padding-top: 4px;
+	padding-bottom: 1px;
+}
+ 
+.btn-share a i {
+	font-size: 24px;
+}
+
+.btn-share.fb {
+	background: #3B5998; /* facebook */
+}
+
+.btn-share.tw {
+	background: #00ACED; /* twitter */
+}
+
+.btn-share.gp {
+	background: #D14836; /* google + */
+}
+
+.btn-share.rd {
+	background: #FF4500; /* reddit */
+}
+
+/* social buttons in mast head */
 /* colors from simpleicons.org */
 
 .btn-social {
