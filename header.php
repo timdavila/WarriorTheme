@@ -47,11 +47,11 @@
 					<?php get_search_form(); ?>
 				</div>
 				<div class="social tablet cf">
-					<div class="btn-social"><a href="#"><i class="fa fa-facebook"></i></a></div>
-					<div class="btn-social"><a href="#"><i class="fa fa-twitter"></i></a></div>
-					<div class="btn-social"><a href="#"><i class="fa fa-google-plus"></i></a></div>
-					<div class="btn-social"><a href="#"><i class="fa fa-youtube"></i></a></div>
-					<div class="btn-social"><a href="#"><i class="fa fa-rss"></i></a></div>
+					<div class="btn-social fb"><a href="#"><i class="fa fa-facebook"></i></a></div>
+					<div class="btn-social tw"><a href="#"><i class="fa fa-twitter"></i></a></div>
+					<div class="btn-social gp"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+					<div class="btn-social yt"><a href="#"><i class="fa fa-youtube"></i></a></div>
+					<div class="btn-social rss"><a href="#"><i class="fa fa-rss"></i></a></div>
 				</div>
 			</div>
 			<div class="menubar tablet">

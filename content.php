@@ -71,10 +71,10 @@
 
 			<div class="post-social">
 				<p>Share this post:</p>
-				<div class="btn-share"><a href="#"><i class="fa fa-facebook"></i></a></div>
-				<div class="btn-share"><a href="#"><i class="fa fa-twitter"></i></a></div>
-				<div class="btn-share"><a href="#"><i class="fa fa-google-plus"></i></a></div>
-				<div class="btn-share"><a href="#"><i class="fa fa-reddit"></i></a></div>
+				<div class="btn-share fb"><a href="#"><i class="fa fa-facebook"></i></a></div>
+				<div class="btn-share tw"><a href="#"><i class="fa fa-twitter"></i></a></div>
+				<div class="btn-share gp"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+				<div class="btn-share rd"><a href="#"><i class="fa fa-reddit"></i></a></div>
 			</div>
 			<div class="cf"></div>
 	</footer>
