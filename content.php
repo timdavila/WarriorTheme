@@ -12,7 +12,6 @@
 <!-- content.php -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php warriortheme_post_thumbnail(); ?>
 
 	<header class="entry-header">
 		<?php
@@ -26,6 +25,8 @@
 				warriortheme_posted_on();
 		?>
 	</header>
+
+	<?php warriortheme_post_thumbnail(); ?>
 
 	<?php if ( is_search() ) : ?>
 	<div class="entry-summary">
