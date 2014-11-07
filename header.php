@@ -56,13 +56,13 @@
 			</div>
 			<div class="menubar tablet">
 				<div class="btn-menu m1">
-					<a id="btn-1" class="btn-reg" href="#" onclick="ToggleMenu('primary');ToggleHighlight('btn-1');">Menu 1</a>
+					<a id="btn-1" class="btn-reg" href="#" onclick="ToggleMenu('primary');ToggleHighlight('btn-1');"><?php echo wp_nav_menu_title( 'primary' ); ?></a>
 				</div>
 				<div class="btn-menu m2">
-					<a id="btn-2" class="btn-reg" href="#" onclick="ToggleMenu('second');ToggleHighlight('btn-2');">Menu 2</a>
+					<a id="btn-2" class="btn-reg" href="#" onclick="ToggleMenu('second');ToggleHighlight('btn-2');"><?php echo wp_nav_menu_title( 'games' ); ?></a>
 				</div>
 				<div class="btn-menu m3">
-					<a id="btn-3" class="btn-reg" href="#" onclick="ToggleMenu('third');ToggleHighlight('btn-3');">Menu 3</a>
+					<a id="btn-3" class="btn-reg" href="#" onclick="ToggleMenu('third');ToggleHighlight('btn-3');"><?php echo wp_nav_menu_title( 'walkthroughs' ); ?></a>
 				</div>
 			</div>
 		</div>
@@ -93,5 +93,5 @@
 
 		<!-- Dynamic WALKTHROUGH NAV - Accomodates 2+ links -->
 		<?php wp_nav_menu( array( 'theme_location' => 'walkthroughs', 'container' => 'nav' , 'container_id' => 'third', 'container_class' => 'primary cf'  ) ); ?>
-	<?php echo wp_nav_menu_title( 'walkthroughs' ); ?>
+
 	</header>

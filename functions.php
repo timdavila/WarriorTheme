@@ -369,6 +369,11 @@ function warriortheme_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'warriortheme_wp_title', 10, 2 );
 
+/**
+* Get the name of a menu for labeling on mobile/tablet views.
+* This is not natively supported by WordPress.
+* See https://core.trac.wordpress.org/ticket/13910
+*/
 
 function wp_nav_menu_title( $theme_location ) {
 	$title = '';
