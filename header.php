@@ -81,14 +81,14 @@
 		<?php get_template_part( 'gamenav' ); // Load gamenav.php which contains the game menu to be displayed on desktop ?>
 
 		<div class="btn-menu mobile m1">
-			<i id="icn-1" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('second');SwapIcon('icn-1');">Menu 2</a>
+			<i id="icn-1" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('second');SwapIcon('icn-1');"><?php echo wp_nav_menu_title( 'games' ); ?></a>
 		</div>
 
 		<!-- Dynamic GAME NAV - Accomodates 2+ links -->
 		<?php wp_nav_menu( array( 'theme_location' => 'games', 'container' => 'nav' , 'container_id' => 'second', 'container_class' => 'primary cf'  ) ); ?>
 
 		<div class="btn-menu mobile">
-			<i id="icn-2" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('third');SwapIcon('icn-2');">Menu 3</a>
+			<i id="icn-2" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('third');SwapIcon('icn-2');"><?php echo wp_nav_menu_title( 'walkthroughs' ); ?></a>
 		</div>
 
 		<!-- Dynamic WALKTHROUGH NAV - Accomodates 2+ links -->
