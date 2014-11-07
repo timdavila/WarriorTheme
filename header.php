@@ -93,5 +93,5 @@
 
 		<!-- Dynamic WALKTHROUGH NAV - Accomodates 2+ links -->
 		<?php wp_nav_menu( array( 'theme_location' => 'walkthroughs', 'container' => 'nav' , 'container_id' => 'third', 'container_class' => 'primary cf'  ) ); ?>
-
+	<?php echo wp_nav_menu_title( 'walkthroughs' ); ?>
 	</header>

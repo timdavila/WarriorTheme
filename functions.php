@@ -369,6 +369,21 @@ function warriortheme_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'warriortheme_wp_title', 10, 2 );
 
+
+function wp_nav_menu_title( $theme_location ) {
+	$title = '';
+	if ( $theme_location && ( $locations = get_nav_menu_locations() ) && isset( $locations[ $theme_location ] ) ) {
+		$menu = wp_get_nav_menu_object( $locations[ $theme_location ] );
+
+		if( $menu && $menu->name ) {
+			$title = $menu->name;
+		}
+	}
+
+	return apply_filters( 'wp_nav_menu_title', $title, $theme_location );
+}
+
+
 // Implement Custom Header features.
 require get_template_directory() . '/inc/custom-header.php';
 
