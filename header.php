@@ -31,7 +31,7 @@
 	<header id="top">
 		<div class="hero">
 			<div class="titlebar mobile">
-				<a href="#" onclick="ToggleMenu('primary');"><i class="rf fa fa-reorder"></i></a>
+				<a href="#" onclick="ToggleMenu('1');"><i class="rf fa fa-reorder"></i></a>
 				<h1><?php bloginfo( 'name' ); ?></h1>
 			</div>
 			<div class="logo tablet demo">
