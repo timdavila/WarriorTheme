@@ -895,11 +895,17 @@ a.post-thumbnail:hover {
 	padding-top: 6px;
 }
 
-.btn-social:hover a {
+.btn-social a:active {
+	box-shadow: none;
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+.btn-social a:hover {
 	background-color: #ffffff;
 }
 
-.btn-social:hover a i {
+.btn-social a:hover i {
 	color: #396194; /* default */
 }
 
