@@ -926,7 +926,8 @@ a.post-thumbnail:hover {
 article footer {
 	border-width: 2px 0px;
 	border-style: solid;
-	border-color: #000;
+	border-color: #396194;
+	color: #396194;
 }
 
 .entry-content h1:first-child,
@@ -959,7 +960,11 @@ article footer {
  	width: 100%;
  	display: block;
  }
- 
+
+.site-footer {
+	padding-top: 24px;
+}
+
  .foot-col ul {
  	list-style: none;
  }
@@ -1256,11 +1261,11 @@ article img {
 
 @media screen and (min-width:1201px) {
 
-.hero, .sitewrap {
+.hero, .sitewrap, .site-footer {
 	width: 1280px;
 	margin: 0px auto;
 }
-
+ 
 .mobile, .menubar, #nav-2, #nav-3 {
 	display: none!important;
 }
@@ -1558,17 +1563,27 @@ main {
 	width: 300px;
 }
 
+.widget {
+	font-size: 14px;
+}
+
 .widget ul {
 	list-style: none;
 	margin: 3px;
+	margin-left: 8px;
+}
+
+.widget a {
+	text-decoration: none;
 }
 
 .widget-title {
 	font-weight: 500;
-	font-size: 20px;
-	border-width: 2px 0px;
-	border-style: solid;
-	border-color: #000;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-left: 8px;
+	border-bottom: 2px solid #396194;
+	color: #396194;
 }
 
 .spacer {
