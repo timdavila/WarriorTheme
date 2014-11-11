@@ -3,13 +3,11 @@
  *
  */
  
-var menus = ["primary", "second", "third"];
+var menus = ["nav-primary", "nav-2", "nav-3"];
  
  // handle show/hide menus for mobile view
  
  function ToggleMenu(id) {
- 	console.log(id);
- 	console.log(menus[id-1]);
  	var e = document.getElementById(menus[id-1]);
  	if(e.style.display == 'block') {
  		e.style.display = 'none';

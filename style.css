@@ -729,33 +729,33 @@ body {
  * -----------------------------------------------------------------------------
  */
 
-.primary ul {
+.site-nav ul {
 	margin: 0;
 }
  
-.primary ul li {
+.site-nav ul li {
 	list-style: none;
 	background-color: #dddddd;
 }
 
-.primary ul li a {
+.site-nav ul li a {
 	color: #396194;
 	display: block;
 	text-decoration: none;
 	font-size: 20px;
 }
 
-#primary ul li {
+#nav-primary ul li {
 	background-color: #396194;
 	box-shadow: inset 0 0 0 0 #396194;
 	transition: all ease 0.4s;
 }
  
-#primary ul li:hover {
+#nav-primary ul li:hover {
 	box-shadow: inset 0 48px 0 0 #FB8B00;
 }
 
-#primary ul li a {
+#nav-primary ul li a {
 	text-transform: uppercase; /* todo: remove */
 	color: #ffffff;
 	font-size: 22px;
@@ -991,9 +991,9 @@ article footer {
 .tablet,
 .desktop,
 .hero-meta,
-#primary,
-#second,
-#third {
+#nav-primary,
+#nav-2,
+#nav-3 {
 	display: none;
 }
 
@@ -1010,11 +1010,11 @@ article img {
 	max-width: 100%;
 }
 
-.primary {
+.site-nav {
 	border-bottom: 1px solid #ffffff;
 }
 
-.primary ul li {
+.site-nav ul li {
 	height: 30px;
 }
 
@@ -1030,7 +1030,7 @@ article img {
 	width: 270px;
 }
 
-.titlebar, #primary {
+.titlebar, #nav-primary {
 	border-bottom: 1px solid #ffffff;
 	background-color: #396194;
 	color: #ffffff;
@@ -1196,23 +1196,23 @@ h1,h2,h3,h4,h5,h6,span,blockquote,code,p {
 	float: right;
 }
 
-#primary ul li {
+#nav-primary ul li {
 	background-color: #dddddd;
 	box-shadow: none;
 	transition: none;
 }
  
-#primary ul li:hover {
+#nav-primary ul li:hover {
 	box-shadow: none;
 }
 
-#primary ul li a {
+#nav-primary ul li a {
 	text-transform: none; /* todo: remove */
 	color: #396194;
 	font-size: 22px;
 }
 
-#primary, #second, #third {
+#nav-primary, #nav-2, #nav-3 {
 	display: none;
 	width: 728px;
 	margin: 0 auto 14px;
@@ -1472,22 +1472,22 @@ Secondary Flyout
 
 /***********************/
 
-#primary {
+#nav-primary {
 	display: table!important; /* required in case layout changes */
 }
 
-.primary {
+.site-nav {
 	display: table;
 	table-layout: fixed; /* even width for all items */
 	width: 100%;
 }
 
-.primary ul {
+.site-nav ul {
 	display: table-row;
 	width: 100%;
 }
 
-.primary ul li {
+.site-nav ul li {
 	display: table-cell;
 	height: 44px;
 	width: auto;

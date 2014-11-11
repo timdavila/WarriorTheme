@@ -40,7 +40,9 @@
 				</a>
 			</div>
 			<div class="hero-banner tablet">
+				<iframe>
 				<img src="http://placehold.it/728x90&text=Ad+Space+-+728+x+90">
+				</iframe>
 			</div>
 			<div class="hero-meta">
 				<div class="search">
@@ -68,14 +70,16 @@
 		</div>
 
 		<!-- Dynamic PRIMARY NAV - Accomodates 4-10 links -->
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'primary', 'container_class' => 'primary cf'  ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'nav-primary', 'container_class' => 'site-nav cf'  ) ); ?>
 
 		<div class="mobile search">
 			<?php get_search_form(); ?>
 		</div>
 
 		<div class="hero-banner mobile">
-				<img src="http://placehold.it/300x90&text=Ad+Space+-+300x90">
+			<iframe>
+			<img src="http://placehold.it/300x90&text=Ad+Space+-+300x90">
+			</iframe>
 		</div>
 
 		<?php get_template_part( 'gamenav' ); // Load gamenav.php which contains the game menu to be displayed on desktop ?>
@@ -85,13 +89,13 @@
 		</div>
 
 		<!-- Dynamic GAME NAV - Accomodates 2+ links -->
-		<?php wp_nav_menu( array( 'theme_location' => 'games', 'container' => 'nav' , 'container_id' => 'second', 'container_class' => 'primary cf'  ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'games', 'container' => 'nav' , 'container_id' => 'nav-2', 'container_class' => 'site-nav cf'  ) ); ?>
 
 		<div class="btn-menu mobile">
 			<i id="icn-3" class="rf fa fa-chevron-right"></i><a href="#" onclick="ToggleMenu('3');"><?php echo wp_nav_menu_title( 'walkthroughs' ); ?></a>
 		</div>
 
 		<!-- Dynamic WALKTHROUGH NAV - Accomodates 2+ links -->
-		<?php wp_nav_menu( array( 'theme_location' => 'walkthroughs', 'container' => 'nav' , 'container_id' => 'third', 'container_class' => 'primary cf'  ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'walkthroughs', 'container' => 'nav' , 'container_id' => 'nav-3', 'container_class' => 'site-nav cf'  ) ); ?>
 
 	</header>
