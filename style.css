@@ -822,7 +822,6 @@ a.post-thumbnail:hover {
 
 .comments-link a {
 	text-decoration: none;
-	color: #fc0;
 }
 
 /* social share buttons after posts */
@@ -1539,6 +1538,8 @@ article footer {
 
 .entry-meta {
 	float: left;
+	margin-top: 9px;
+	margin-left: 5px;
 }
 
 main {
