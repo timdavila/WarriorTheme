@@ -32,7 +32,7 @@
 		<div class="hero">
 			<div class="titlebar mobile">
 				<a href="#" onclick="ToggleMenu('1');"><i class="rf fa fa-reorder"></i></a>
-				<h1><?php bloginfo( 'name' ); ?></h1>
+				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			</div>
 			<div class="logo tablet demo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -40,8 +40,7 @@
 				</a>
 			</div>
 			<div class="hero-banner tablet">
-				<iframe>
-				<img src="http://placehold.it/728x90&text=Ad+Space+-+728+x+90">
+				<iframe src="http://placehold.it/728x90&text=Ad+Space+-+728+x+90">
 				</iframe>
 			</div>
 			<div class="hero-meta">
@@ -77,8 +76,7 @@
 		</div>
 
 		<div class="hero-banner mobile">
-			<iframe>
-			<img src="http://placehold.it/300x90&text=Ad+Space+-+300x90">
+			<iframe src="http://placehold.it/300x90&text=Ad+Space+-+300x90">
 			</iframe>
 		</div>
 
