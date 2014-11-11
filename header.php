@@ -40,8 +40,7 @@
 				</a>
 			</div>
 			<div class="hero-banner tablet">
-				<iframe src="http://placehold.it/728x90&text=Ad+Space+-+728+x+90">
-				</iframe>
+				<img src="http://placehold.it/728x90&text=Ad+Space+-+728+x+90" />
 			</div>
 			<div class="hero-meta">
 				<div class="search">
@@ -76,8 +75,7 @@
 		</div>
 
 		<div class="hero-banner mobile">
-			<iframe src="http://placehold.it/300x90&text=Ad+Space+-+300x90">
-			</iframe>
+			<img src="http://placehold.it/300x90&text=Ad+Space+-+300x90" />
 		</div>
 
 		<?php get_template_part( 'gamenav' ); // Load gamenav.php which contains the game menu to be displayed on desktop ?>

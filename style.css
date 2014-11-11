@@ -817,8 +817,13 @@ a.post-thumbnail:hover {
  }
  
  .comments-link {
- 	margin: 5px 0px 0px 10px;
+ 	font-size: 20px;
  }
+
+.comments-link a {
+	text-decoration: none;
+	color: #fc0;
+}
 
 /* social share buttons after posts */
 /* colors from simpleicons.org */
