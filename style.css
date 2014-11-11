@@ -790,7 +790,7 @@ a.post-thumbnail:hover {
  }
  
  article header {
- 	color: #396194;
+ 	color: #000;
  }
  
  .entry-header h1 {
@@ -800,7 +800,7 @@ a.post-thumbnail:hover {
  
  .entry-header a {
  	text-decoration: none;
- 	color: #396194;
+ 	color: #000;
  }
  
  /**
@@ -911,6 +911,12 @@ a.post-thumbnail:hover {
 
 .page .entry-content {
 	padding-top: 0;
+}
+
+article footer {
+	border-width: 2px 0px;
+	border-style: solid;
+	border-color: #000;
 }
 
 .entry-content h1:first-child,
@@ -1515,8 +1521,11 @@ article img {
 
 article footer {
 	width: 100%;
-	height: 30px;
 	font-size: 14px;
+}
+
+.entry-meta {
+	float: left;
 }
 
 main {
@@ -1532,6 +1541,20 @@ main {
 .sidebar {
 	float: right;
 	height: 100%;
+	width: 300px;
+}
+
+.widget ul {
+	list-style: none;
+	margin: 3px;
+}
+
+.widget-title {
+	font-weight: 500;
+	font-size: 20px;
+	border-width: 2px 0px;
+	border-style: solid;
+	border-color: #000;
 }
 
 .spacer {
@@ -1541,7 +1564,7 @@ main {
 }
 
 .sitewrap {
-	margin: 0px 0;
+	margin: 0px auto;
 }
 
 }

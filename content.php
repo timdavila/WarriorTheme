@@ -45,7 +45,7 @@
 		?>
 	</div>
 	<?php endif; ?>
-	<footer class="entry-meta">
+	<footer>
 
 
 			<div class="entry-meta">
