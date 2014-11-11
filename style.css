@@ -808,11 +808,16 @@ a.post-thumbnail:hover {
   * -----------------------------------------------------------------------------
  */
  
- .post-social p {
+ .post-social span {
  	display: inline-block;
  	float: left;
- 	padding-top: 4px;
+ 	padding-top: 6px;
+ 	margin-right: 18px;
  	height: 32px;
+ }
+ 
+ .comments-link {
+ 	margin: 5px 0px 0px 10px;
  }
 
 /* social share buttons after posts */
@@ -822,6 +827,7 @@ a.post-thumbnail:hover {
 	width: 32px;
 	height: 32px;
 	text-align: center;
+ 	margin-right: 12px;
 	float: left;
 }
  
@@ -1502,6 +1508,7 @@ Secondary Flyout
 
 .post-social {
 	float: right;
+	margin-top: 9px;
 }
 
 
@@ -1521,6 +1528,7 @@ article img {
 
 article footer {
 	width: 100%;
+	height: 50px;
 	font-size: 14px;
 }
 

@@ -52,7 +52,7 @@
 				<?php
 					if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 				?>
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'warriortheme' ), __( '1 Comment', 'warriortheme' ), __( '% Comments', 'warriortheme' ) ); ?></span>
+				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'warriortheme' ), __( '<span class="comments">1</span> Comment', 'warriortheme' ), __( '<span class="comments">%</span> Comments', 'warriortheme' ) ); ?></span>
 				<?php
 					endif;
 
@@ -70,7 +70,7 @@
 			<?php endif; ?>
 
 			<div class="post-social">
-				<p>Share this post:</p>
+				<span>Share this post:</span>
 				<div class="btn-share fb"><a href="#"><i class="fa fa-facebook"></i></a></div>
 				<div class="btn-share tw"><a href="#"><i class="fa fa-twitter"></i></a></div>
 				<div class="btn-share gp"><a href="#"><i class="fa fa-google-plus"></i></a></div>
