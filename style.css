@@ -676,6 +676,13 @@ body {
 	clear: both;
 }
 
+/* links */
+article a:hover,
+.widget a:hover,
+.site-footer a:hover {
+	color: #FB8B00;
+}
+
 
 /**
  * 4.0 Fonts
@@ -800,7 +807,6 @@ a.post-thumbnail:hover {
  
  .entry-header a {
  	text-decoration: none;
- 	color: #000;
  }
  
  /**
@@ -1526,7 +1532,7 @@ Secondary Flyout
 	width: 980px;
 }
 
-article {
+article, #disqus_thread {
 	padding: 25px 30px 30px 30px;
 }
 
@@ -1553,7 +1559,7 @@ main {
 
 .foot-col {
 	float: left;
-	width: 250px;
+	min-width: 250px;
 	font-size: 14px;
 }
 
