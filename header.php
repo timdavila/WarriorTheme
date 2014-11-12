@@ -40,7 +40,7 @@
 				</a>
 			</div>
 			<div class="hero-banner tablet">
-				<img src="http://placehold.it/728x90/ffffff/&text=Ad+Space+-+728+x+90" />
+				<img src="http://placehold.it/728x90/ffffff/" />
 			</div>
 			<div class="hero-meta">
 				<div class="search">
@@ -75,7 +75,7 @@
 		</div>
 
 		<div class="hero-banner mobile">
-			<img src="http://placehold.it/300x90/ffffff/&text=Ad+Space+-+300x90" />
+			<img src="http://placehold.it/300x90/ffffff/" />
 		</div>
 
 		<?php get_template_part( 'gamenav' ); // Load gamenav.php which contains the game menu to be displayed on desktop ?>

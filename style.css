@@ -1348,7 +1348,6 @@ article img {
 }
 
 .secondary > ul li {
-	background: url('http://placehold.it/60x60');
 	display: block;
 	width: 60px;
 	height: 60px;
@@ -1374,7 +1373,7 @@ Secondary Flyout
 
 .flyout {
 	display: none;
-	width: 1140px;
+	width: 1158px;
 	height: 260px;
 	position: absolute;
 	color: #396194;
@@ -1394,75 +1393,122 @@ Secondary Flyout
 }
 
 .secondary ul li:nth-of-type(2) .flyout {
-	margin-left: -60px;
+	margin-left: -61px;
 }
 
 .secondary ul li:nth-of-type(3) .flyout {
-	margin-left: -120px;
+	margin-left: -122px;
 }
 
 .secondary ul li:nth-of-type(4) .flyout {
-	margin-left: -180px;
+	margin-left: -183px;
 }
 
 .secondary ul li:nth-of-type(5) .flyout {
-	margin-left: -240px;
+	margin-left: -244px;
 }
 
 .secondary ul li:nth-of-type(6) .flyout {
-	margin-left: -300px;
+	margin-left: -305px;
 }
 
 .secondary ul li:nth-of-type(7) .flyout {
-	margin-left: -360px;
+	margin-left: -366px;
 }
 
 .secondary ul li:nth-of-type(8) .flyout {
-	margin-left: -420px;
+	margin-left: -427px;
 }
 
 .secondary ul li:nth-of-type(9) .flyout {
-	margin-left: -480px;
+	margin-left: -488px;
 }
 
 .secondary ul li:nth-of-type(10) .flyout  {
-	margin-left: -540px;
+	margin-left: -549px;
 }
 
 .secondary ul li:nth-of-type(11) .flyout  {
-	margin-left: -600px;
+	margin-left: -610px;
 }
 
 .secondary ul li:nth-of-type(12) .flyout  {
-	margin-left: -660px;
+	margin-left: -671px;
 }
 
 .secondary ul li:nth-of-type(13) .flyout  {
-	margin-left: -720px;
+	margin-left: -732px;
 }
 
 .secondary ul li:nth-of-type(14) .flyout  {
-	margin-left: -780px;
+	margin-left: -793px;
 }
 
 .secondary ul li:nth-of-type(15) .flyout  {
-	margin-left: -840px;
+	margin-left: -854px;
 }
 
 .secondary ul li:nth-of-type(16) .flyout  {
-	margin-left: -900px;
+	margin-left: -915px;
 }
 
 .secondary ul li:nth-of-type(17) .flyout  {
-	margin-left: -960px;
+	margin-left: -976px;
 }
 
 .secondary ul li:nth-of-type(18) .flyout  {
-	margin-left: -1020px;
+	margin-left: -1037px;
 }
 
 .secondary ul li:nth-of-type(19) .flyout  {
-	margin-left: -1080px;
+	margin-left: -1098px;
+}
+
+
+.secondary {
+	background: #396194;
+	height: 15px;
+}
+
+.secondary > ul,
+.secondary > ul > li {
+	border-right: 1px solid rgba(57,97,148,0.5);
+	
+	/* gradient from #396194 to #cccccc */
+	background: #396194; /* Old browsers */
+	background: -moz-linear-gradient(top,  #396194 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#396194), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #396194 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #396194 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #396194 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #396194 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#396194', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+}
+
+.secondary > ul {
+	width: 1160px;
+	padding: 0px 10px;
+	box-shadow: 0px 1px 2px #333;
+	border-radius: 10px;
+}
+
+.secondary > ul > li:first-of-type {
+	border-left: 1px solid rgba(57,97,148,0.5);
+}
+
+.secondary > ul > li:hover {
+	
+	/* gradient from #396194 to #94BAEF */
+	background: #396194; /* Old browsers */
+	background: -moz-linear-gradient(top,  #396194 0%, #94baef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#396194), color-stop(100%,#94baef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #396194 0%,#94baef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #396194 0%,#94baef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #396194 0%,#94baef 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #396194 0%,#94baef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#396194', endColorstr='#94baef',GradientType=0 ); /* IE6-9 */
+
 }
 
 .fly-col {
