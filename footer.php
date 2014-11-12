@@ -14,9 +14,10 @@
 		</div>
 
 		<footer class="site-footer cf" role="contentinfo">
-
+			<div class="foot-wrap">
 			<?php dynamic_sidebar( 'footer-widgets' ); ?>
 			<div class="cf"></div>
+			</div>
 		</footer>
 
 		<div class="scripts offscreen">
