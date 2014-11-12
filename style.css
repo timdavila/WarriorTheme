@@ -1634,6 +1634,7 @@ main {
 
 .site-footer {
 	padding: 24px;
+	width: auto;
 }
 
 .foot-wrap {
