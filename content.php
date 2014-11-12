@@ -35,7 +35,7 @@
 	<?php else : ?>
 	<div class="entry-content">
 		<?php
-			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'warriortheme' ) );
+			the_content( __( 'Read more...', 'warriortheme' ) );
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'warriortheme' ) . '</span>',
 				'after'       => '</div>',

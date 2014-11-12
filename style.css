@@ -688,6 +688,7 @@ article a,
 .widget a,
 .site-footer a {
 	color: #396194;
+	text-decoration: none;
 }
 
 article a:hover,
@@ -810,16 +811,21 @@ a.post-thumbnail:hover {
  }
  
  article header {
- 	color: #000;
+ 	color: #2b2b2b;
  }
  
  .entry-header h1 {
  	font-weight: normal;
  	font-size: 40px;
+ 	margin-bottom: 0px;
  }
  
  .entry-header a {
  	text-decoration: none;
+ }
+ 
+ .entry-date {
+ 	font-size: 14px;
  }
  
  /**
@@ -949,10 +955,10 @@ a.post-thumbnail:hover {
 }
 
 article footer {
-	border-width: 2px 0px;
+	border-width: 1px 0px;
 	border-style: solid;
-	border-color: #396194;
-	color: #396194;
+	border-color: #bbb;
+	color: #2B2B2B;
 }
 
 .entry-content h1:first-child,
