@@ -31,7 +31,7 @@
 				warriortheme_posted_on();
 
 
-			edit_post_link( __( 'Edit', 'warriortheme' ), ' / <span class="edit-link">', '</span></p>' );
+			edit_post_link( __( 'Edit this post', 'warriortheme' ), '<br><span class="edit-link">', '</span></p>' );
 		?>
 	</header>
 
@@ -57,11 +57,11 @@
 	<footer>
 
 	<?php if ( is_single() ) :
-			the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
+			//the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
 
 			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && warriortheme_categorized_blog() ) : ?>
 			<div class="post-cat lf">
-				<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'warriortheme' ) ); ?></span>
+				<span class="cat-links">Categories: <?php echo get_the_category_list(', '); ?></span>
 			</div>
 
 			<?php endif;
