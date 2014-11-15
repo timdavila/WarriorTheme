@@ -15,7 +15,10 @@
 
 	<header class="entry-header">
 		<?php
-			if ( is_single() ) :
+
+			if ( is_sticky() && is_home() && ! is_paged() ) :
+				the_title( '<h1><i class="fa fa-thumb-tack"></i>', '</h1>' );
+			elseif ( is_single() ) :
 				the_title( '<h1>', '</h1>' );
 			else :
 				the_title( '<h1><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
@@ -23,6 +26,9 @@
 
 			if ( 'post' == get_post_type() )
 				warriortheme_posted_on();
+
+
+			edit_post_link( __( 'Edit', 'warriortheme' ), '<span class="edit-link">', '</span>' );
 		?>
 	</header>
 
@@ -56,7 +62,6 @@
 				<?php
 					endif;
 
-					edit_post_link( __( 'Edit', 'warriortheme' ), '<span class="edit-link">', '</span>' );
 				?>
 		</div>
 
