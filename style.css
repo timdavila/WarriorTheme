@@ -1061,7 +1061,7 @@ article img {
 }
 
 .site-nav {
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #396194;
 }
 
 .site-nav ul li {
@@ -1070,6 +1070,21 @@ article img {
 
 #nav-2 ul li, #nav-3 ul li {
 	padding-left: 20px;
+	border-bottom: 1px inset #2B2B2B;
+}
+
+#nav-2 li:hover,
+#nav-2 li:target,
+#nav-3 li:hover,
+#nav-3 li:target {
+	background-color: #2B2B2B;
+}
+
+#nav-2 li:hover a,
+#nav-2 li:target a,
+#nav-3 li:hover a,
+#nav-3 li:target a {
+	color: #ffffff;
 }
 
 .search form {
@@ -1078,6 +1093,10 @@ article img {
 
 .in-search {
 	width: 270px;
+}
+
+#nav-primary {
+	border-top: 1px solid #ffffff;
 }
 
 .titlebar, #nav-primary {
