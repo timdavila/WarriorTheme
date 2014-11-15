@@ -1049,7 +1049,7 @@ article footer {
 
 .hero-banner {
 	margin: 8px auto;
-	width: 300px;
+	text-align: center;
 }
 
 main {
@@ -1081,7 +1081,7 @@ article img {
 }
 
 .titlebar, #nav-primary {
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #396194;
 	background-color: #396194;
 	color: #ffffff;
 	text-align: center;
@@ -1089,14 +1089,14 @@ article img {
 
 .titlebar h1 {
 	margin: 0;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: normal;
 }
 
 .titlebar i {
 	font-size: 24px;
 	position: absolute;
-	top: 1px;
+	top: 3px;
 	right: 8px;
 	color: #ffffff;
 }
@@ -1142,14 +1142,20 @@ article img {
 	clear: both;
 }
 
+.foot-wrap {
+	padding: 5px;
+}
+
 .foot-col {
 	float: left;
 	min-width: 125px;
 	font-size: 14px;
+	margin: 5px auto;
 }
 
-h1,h2,h3,h4,h5,h6,span,blockquote,code,p {
-	padding: 0 5px;
+.entry-header,
+.entry-content {
+	padding: 0 8px;
 }
 }
  /*
@@ -1697,6 +1703,7 @@ main {
 
 .sitewrap {
 	margin: 0px auto;
+	margin-bottom: 30px;
 }
 
 }
