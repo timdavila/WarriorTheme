@@ -1173,6 +1173,14 @@ article footer {
 	padding: 4px 10px;
 }
 
+.post-social span {
+	margin-right: 8px;
+}
+
+.btn-share.rd {
+	margin-right: 0px; /* remove spacing on last button */
+}
+
 .foot-wrap {
 	padding: 5px;
 }
