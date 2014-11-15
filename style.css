@@ -961,6 +961,10 @@ a.post-thumbnail:hover {
 	padding-top: 0;
 }
 
+article.sticky {
+	box-shadow: 0px 0px 3px 0px #6E6E80;
+}
+
 article footer {
 	border-width: 1px 0px;
 	border-style: solid;
@@ -1189,6 +1193,10 @@ article footer {
 .entry-header,
 .entry-content {
 	padding: 0 8px;
+}
+
+#disqus_thread {
+	padding: 8px;
 }
 }
  /*
@@ -1690,7 +1698,12 @@ Secondary Flyout
 }
 
 article, #disqus_thread {
-	padding: 25px 30px 30px 30px;
+	margin: 25px 30px 30px 30px;
+}
+
+article.sticky .entry-header,
+article.sticky .entry-content {
+	padding: 10px;
 }
 
 article img {

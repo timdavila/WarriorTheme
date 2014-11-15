@@ -102,9 +102,6 @@ if ( ! function_exists( 'warriortheme_posted_on' ) ) :
  * @since Warrior Theme 0.1
  */
 function warriortheme_posted_on() {
-	if ( is_sticky() && is_home() && ! is_paged() ) {
-		echo '<span class="featured-post">' . __( 'Sticky', 'warriortheme' ) . '</span>';
-	}
 
 	// Set up and print post meta information.
 	printf( '<p class="entry-date">Posted on <a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a> by <span class="byline"><a class="url fn n" href="%4$s" rel="author">%5$s</a></span>',
