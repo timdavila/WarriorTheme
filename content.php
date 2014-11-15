@@ -16,9 +16,12 @@
 	<header class="entry-header">
 		<?php
 
-			if ( is_sticky() && is_home() && ! is_paged() ) :
-				the_title( '<h1><i class="fa fa-thumb-tack"></i>', '</h1>' );
-			elseif ( is_single() ) :
+			/*if ( is_sticky() && is_home() && ! is_paged() ) :
+			// put this somewhere
+				<i class="fa fa-thumb-tack"></i>
+			endif;*/
+
+			if ( is_single() ) :
 				the_title( '<h1>', '</h1>' );
 			else :
 				the_title( '<h1><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
@@ -28,7 +31,7 @@
 				warriortheme_posted_on();
 
 
-			edit_post_link( __( 'Edit', 'warriortheme' ), '<span class="edit-link">', '</span>' );
+			edit_post_link( __( 'Edit', 'warriortheme' ), ' / <span class="edit-link">', '</span></p>' );
 		?>
 	</header>
 
@@ -52,7 +55,16 @@
 	</div>
 	<?php endif; ?>
 	<footer>
+			if ( is_single() ) :
+	<?php the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
 
+			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && warriortheme_categorized_blog() ) : ?>
+			<div class="post-cat lf">
+				<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'warriortheme' ) ); ?></span>
+			</div>
+
+			<?php endif;
+				  endif; ?>
 
 			<div class="entry-meta">
 				<?php
@@ -65,14 +77,6 @@
 				?>
 		</div>
 
-	<?php the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
-
-			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && warriortheme_categorized_blog() ) : ?>
-			<div class="post-cat lf">
-				<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'warriortheme' ) ); ?></span>
-			</div>
-
-			<?php endif; ?>
 
 			<div class="post-social">
 				<span>Share this post:</span>
