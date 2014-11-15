@@ -55,8 +55,9 @@
 	</div>
 	<?php endif; ?>
 	<footer>
-			if ( is_single() ) :
-	<?php the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
+
+	<?php if ( is_single() ) :
+			the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
 
 			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && warriortheme_categorized_blog() ) : ?>
 			<div class="post-cat lf">
