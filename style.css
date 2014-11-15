@@ -1339,6 +1339,11 @@ article footer {
 	font-size: 14px;
 }
 
+.post-social {
+	float: right;
+	margin-top: 9px;
+}
+
 .entry-meta {
 	float: left;
 	margin-top: 9px;
@@ -1351,24 +1356,18 @@ article img {
 }
 
 .site-footer {
-	padding: 24px;
-	width: auto;
+	width: 728px;
+	margin: 0px auto;
 }
 
 .foot-wrap {
-	width: 728px;
-	margin: 0px auto;
-	display: table;
+	padding: 12px;
 }
 
 .foot-col {
 	float: left;
 	min-width: 150px;
 	font-size: 14px;
-}
-
-.foot-col:first-of-type {
-	text-align: right;
 }
 
 }
