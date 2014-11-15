@@ -1052,6 +1052,10 @@ article footer {
 	text-align: center;
 }
 
+#top {
+	background: #ddd;
+}
+
 main {
 	width: 100%;
 }
@@ -1070,7 +1074,7 @@ article img {
 
 #nav-2 ul li, #nav-3 ul li {
 	padding-left: 20px;
-	border-bottom: 1px inset #2B2B2B;
+	border-bottom: 1px solid #bbb;
 }
 
 #nav-2 li:hover,
@@ -1115,7 +1119,7 @@ article img {
 .titlebar i {
 	font-size: 24px;
 	position: absolute;
-	top: 3px;
+	top: 4px;
 	right: 8px;
 	color: #ffffff;
 }
@@ -1157,9 +1161,9 @@ article img {
 	border-top: 1px solid #396194;
 }
 
-.post-social {
-	clear: both;
-}
+article footer {
+	padding: 4px 10px;
+}
 
 .foot-wrap {
 	padding: 5px;
@@ -1167,9 +1171,13 @@ article img {
 
 .foot-col {
 	float: left;
-	min-width: 125px;
+	min-width: 120px;
 	font-size: 14px;
-	margin: 5px auto;
+	padding: 5px;
+}
+
+.entry-meta {
+	margin-bottom: 8px;
 }
 
 .entry-header,
