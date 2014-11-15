@@ -961,9 +961,24 @@ a.post-thumbnail:hover {
 	padding-top: 0;
 }
 
+.archive-header {
+	box-shadow: 0px 0px 3px 0px #6E6E80;
+	padding: 10px;
+	margin: 25px;
+}
+
+/*
+
 article.sticky {
 	box-shadow: 0px 0px 3px 0px #6E6E80;
 }
+
+article.sticky .entry-header,
+article.sticky .entry-content {
+	padding: 10px;
+}
+
+*/
 
 article footer {
 	border-width: 1px 0px;
@@ -1699,11 +1714,6 @@ Secondary Flyout
 
 article, #disqus_thread {
 	margin: 25px 30px 30px 30px;
-}
-
-article.sticky .entry-header,
-article.sticky .entry-content {
-	padding: 10px;
 }
 
 article img {

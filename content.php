@@ -53,10 +53,9 @@
 			) );
 		?>
 	</div>
-	<?php endif; ?>
-	<footer>
+	<?php endif;
 
-	<?php if ( is_single() ) :
+	if ( is_single() ) :
 			//the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
 
 			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && warriortheme_categorized_blog() ) : ?>
@@ -67,6 +66,7 @@
 			<?php endif;
 				  endif; ?>
 
+	<footer>
 			<div class="entry-meta">
 				<?php
 					if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
