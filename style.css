@@ -1161,6 +1161,10 @@ article img {
 	border-top: 1px solid #396194;
 }
 
+footer {
+	width: auto;
+}
+
 article footer {
 	padding: 4px 10px;
 }
