@@ -1330,8 +1330,19 @@ article footer {
 	padding: 0 12px;
 }
 
-article footer p {
-	margin-bottom: 6px;
+#disqus_thread {
+	padding: 16px 12px;
+}
+
+article footer {
+	height: 50px;
+	font-size: 14px;
+}
+
+.entry-meta {
+	float: left;
+	margin-top: 9px;
+	margin-left: 5px;
 }
 
 article img {
@@ -1339,14 +1350,25 @@ article img {
 	margin-bottom: 15px;
 }
 
-.post-social {
-	clear: both;
-}
+.site-footer {
+	padding: 24px;
+	width: auto;
+}
+
+.foot-wrap {
+	width: 728px;
+	margin: 0px auto;
+	display: table;
+}
 
 .foot-col {
-	display: table-cell;
+	float: left;
 	min-width: 150px;
 	font-size: 14px;
+}
+
+.foot-col:first-of-type {
+	text-align: right;
 }
 
 }
