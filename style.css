@@ -1271,7 +1271,6 @@ article footer {
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #396194;
-	/*border: 1px solid #ffffff;*/
 	padding: 6px 0px;
 	width: 200px;
 	-moz-box-shadow: 2px 2px 3px #666666;
@@ -1283,6 +1282,7 @@ article footer {
 	background-color: #ffffff!important;
 	color: #396194!important;
 }
+
 .btn-menu.m2 a {
 	margin: 0 auto;
 }
@@ -1304,23 +1304,25 @@ article footer {
 #nav-primary ul li a {
 	text-transform: none; /* todo: remove */
 	color: #396194;
-	font-size: 22px;
+	font-size: 20px;
 }
 
 #nav-primary, #nav-2, #nav-3 {
 	display: none;
-	width: auto;
 }
 
 .site-nav {
-	margin-bottom: 14px;
-	border-type: solid;
-	border-width: 1px 0px;
-	border-color: #396194;
+	width: auto;
+	border-top: 1px solid #396194;
 }
 
 .site-nav ul li {
 	border-bottom: 1px solid #bbb;
+	padding-left: 20px;
+}
+
+.site-nav ul li a {
+	font-size: 20px;
 }
 
 .entry-header,
