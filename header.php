@@ -15,9 +15,8 @@
 	<meta name="viewport" content="width=device-width, initial scale=1">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Signika" rel="stylesheet" type="text/css">
-	<link href='//fonts.googleapis.com/css?family=Signika+Negative' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link href="//fonts.googleapis.com/css?family=Signika:300,400" rel="stylesheet" type="text/css">
+	<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

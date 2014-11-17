@@ -104,7 +104,7 @@ if ( ! function_exists( 'warriortheme_posted_on' ) ) :
 function warriortheme_posted_on() {
 
 	// Set up and print post meta information.
-	printf( '<p class="entry-date">Posted on <a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a> by <span class="byline"><a class="url fn n" href="%4$s" rel="author">%5$s</a></span>',
+	printf( '<p class="entry-date">Posted on <time class="entry-date" datetime="%2$s">%3$s</time> by <span class="byline"><a class="url fn n" href="%4$s" rel="author">%5$s</a></span>',
 		esc_url( get_permalink() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
