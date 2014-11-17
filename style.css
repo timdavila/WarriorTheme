@@ -703,8 +703,12 @@ article a:hover,
  * -----------------------------------------------------------------------------
  */
 body {	
-	font-family: 'Signika', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 	font-size: 16px;
+}
+
+header {
+	font-family: 'Signika', sans-serif;
 }
 
 
