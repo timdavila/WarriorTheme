@@ -31,7 +31,6 @@ function warriortheme_paging_nav() {
 	</span>
 	</nav>
 	<?php
-	endif;
 }
 endif;
 
