@@ -48,11 +48,11 @@
 					<?php get_search_form(); ?>
 				</div>
 				<div class="social tablet cf">
-					<div class="btn-social fb"><a href="#"><i class="fa fa-facebook"></i></a></div>
-					<div class="btn-social tw"><a href="#"><i class="fa fa-twitter"></i></a></div>
-					<div class="btn-social gp"><a href="#"><i class="fa fa-google-plus"></i></a></div>
-					<div class="btn-social yt"><a href="#"><i class="fa fa-youtube"></i></a></div>
-					<div class="btn-social rss"><a href="#"><i class="fa fa-rss"></i></a></div>
+					<div class="btn-social fb"><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></div>
+					<div class="btn-social tw"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></div>
+					<div class="btn-social gp"><a target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></div>
+					<div class="btn-social yt"><a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a></div>
+					<div class="btn-social rss"><a target="_blank" href="/feed/"><i class="fa fa-rss"></i></a></div>
 				</div>
 			</div>
 			<div class="menubar tablet">
