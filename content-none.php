@@ -8,6 +8,8 @@
  */
 ?>
 
+<!-- content-none.php -->
+
 <article>
 	<header class="entry-header">
 	<h1 class="page-title"><?php _e( 'Nothing Found', 'warriortheme' ); ?></h1>
