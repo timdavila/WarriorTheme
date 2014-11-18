@@ -23,11 +23,11 @@ function warriortheme_paging_nav() {
 	if ( $wp_query->max_num_pages < 2 ) {
 		return;
 	}
-
+	?>
 	<nav class="pagination" role="navigation"><span class="prev-link lf">
-	<?php next_posts_link( '&larr; Older Entries', $wp_query->max_num_pages ); ?>
+	<?php next_posts_link( '&laquo; Older Entries', $wp_query->max_num_pages ); ?>
 	</span><span class="next-link rf">
-	<?php previous_posts_link( 'Newer Entries &rarr;' ); ?>
+	<?php previous_posts_link( 'Newer Entries &raquo;' ); ?>
 	</span>
 	</nav>
 	<?php
