@@ -19,13 +19,15 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<!-- template archive.php -->
+
+<div class="sitewrap">
+	<main id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
+			<div class="archive-header">
+				<h1 class="archive-title">
 					<?php
 						if ( is_day() ) :
 							printf( __( 'Daily Archives: %s', 'warriortheme' ), get_the_date() );
@@ -42,7 +44,7 @@ get_header(); ?>
 						endif;
 					?>
 				</h1>
-			</header><!-- .page-header -->
+			</div>
 
 			<?php
 					// Start the Loop.
@@ -65,10 +67,8 @@ get_header(); ?>
 
 				endif;
 			?>
-		</div><!-- #content -->
-	</section><!-- #primary -->
+	</main>
 
 <?php
-get_sidebar( 'content' );
 get_sidebar();
 get_footer();

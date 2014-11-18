@@ -9,14 +9,16 @@
 
 get_header(); ?>
 
+<!-- template search.php -->
+
 <div class="sitewrap">
 	<main id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<div class="archive-header">
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'warriortheme' ), get_search_query() ); ?></h1>
-			</header>
+			</div>
 
 				<?php
 					// Start the Loop.

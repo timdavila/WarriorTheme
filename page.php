@@ -15,7 +15,6 @@ get_header(); ?>
 
 <!-- template page.php -->
 
-
 <div class="sitewrap">
 	<main id="content" role="main">
 
@@ -39,7 +38,6 @@ get_header(); ?>
 					}
 				endwhile;
 			?>
-	<?php get_sidebar( 'content' ); ?>
 </main>
 
 <?php
