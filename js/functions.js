@@ -42,3 +42,11 @@ var menus = ["nav-primary", "nav-2", "nav-3"];
  		document.getElementById('icn-'+id).className = 'rf fa fa-chevron-down';		
  	}
  }
+ 
+ // popup social share options in a new, small window
+ 
+var newwindow;
+function popup(url) {
+	newwindow=window.open(url,'Share','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=500');
+	if (window.focus) {newwindow.focus()}
+}
