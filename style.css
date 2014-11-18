@@ -650,8 +650,7 @@ div.wp-caption.alignright .wp-caption-text {
  */
 
 body {
-	background-color: #94B6E7;
-	background-color: rgba(148,182,231,0.2);
+	background-color: #E9F0FA;
 	
 	/* gradient from 57,97,148 to 148,182,231 */
 	/* gradient from #396194 to #94B6E7 */
@@ -981,7 +980,8 @@ article.sticky {
 
 article.sticky .entry-header,
 article.sticky .entry-summary,
-article.sticky .entry-content {
+article.sticky .entry-content,
+article.sticky .post-cat {
 	padding: 10px;
 }
 
@@ -1215,7 +1215,8 @@ article footer {
 
 .entry-header,
 .entry-summary,
-.entry-content {
+.entry-content,
+.post-cat {
 	padding: 0 8px;
 }
 
@@ -1366,7 +1367,8 @@ article footer {
 
 .entry-header,
 .entry-content,
-.entry-summary {
+.entry-summary,
+.post-cat {
 	padding: 0 12px;
 }
 
