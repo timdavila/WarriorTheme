@@ -685,18 +685,21 @@ body {
 
 article a,
 .widget a,
+.pagination a,
 .site-footer a {
 	color: #396194;
 	text-decoration: none;
 }
 
 article .entry-content a,
-article footer a {
+article footer a,
+.pagination a {
 	font-weight: bold;
 }
 
 article a:hover,
 .widget a:hover,
+.pagination a:hover,
 .site-footer a:hover {
 	color: #FB8B00;
 }
@@ -1722,7 +1725,7 @@ Secondary Flyout
 	width: 980px;
 }
 
-article, #disqus_thread {
+article, #disqus_thread, .pagination {
 	margin: 25px 30px 30px 30px;
 }
 

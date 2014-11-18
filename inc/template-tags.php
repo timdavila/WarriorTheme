@@ -24,6 +24,10 @@ function warriortheme_paging_nav() {
 		return;
 	}
 
+
+	next_posts_link( '&larr; Older Entries', $wp_query->max_num_pages );
+	previous_posts_link( 'Newer Entries &rarr;' );
+
 	$paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
 	$pagenum_link = html_entity_decode( get_pagenum_link() );
 	$query_args   = array();
@@ -45,10 +49,10 @@ function warriortheme_paging_nav() {
 		'format'   => $format,
 		'total'    => $wp_query->max_num_pages,
 		'current'  => $paged,
-		'mid_size' => 1,
+		'mid_size' => 0,
 		'add_args' => array_map( 'urlencode', $query_args ),
-		'prev_text' => __( '&larr; Previous', 'warriortheme' ),
-		'next_text' => __( 'Next &rarr;', 'warriortheme' ),
+		'prev_text' => __( '&larr; Older Entries', 'warriortheme' ),
+		'next_text' => __( 'Newer Entries &rarr;', 'warriortheme' ),
 	) );
 
 	if ( $links ) :

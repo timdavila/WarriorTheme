@@ -59,7 +59,7 @@
 			//the_tags( '<div class="post-cat post-tag lf"><span class="tag-links">', '', '</span></div>' ); ?>
 
 			<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && warriortheme_categorized_blog() ) : ?>
-			<div class="post-cat lf">
+			<div class="post-cat">
 				<span class="cat-links">Categories: <?php echo get_the_category_list(', '); ?></span>
 			</div>
 
