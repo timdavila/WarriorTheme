@@ -563,28 +563,28 @@ span > object {
 blockquote.alignleft,
 figure.wp-caption.alignleft,
 img.alignleft {
-	margin: 7px 24px 7px 0;
+	margin: 7px 24px 15px 0;
 }
 
 .wp-caption.alignleft {
-	margin: 7px 14px 7px 0;
+	margin: 7px 14px 15px 0;
 }
 
 blockquote.alignright,
 figure.wp-caption.alignright,
 img.alignright {
-	margin: 7px 0 7px 24px;
+	margin: 7px 0 15px 24px;
 }
 
 .wp-caption.alignright {
-	margin: 7px 0 7px 14px;
+	margin: 7px 0 15px 14px;
 }
 
 blockquote.aligncenter,
 img.aligncenter,
 .wp-caption.aligncenter {
 	margin-top: 7px;
-	margin-bottom: 7px;
+	margin-bottom: 15px;
 }
 
 .site-content blockquote.alignleft,
@@ -998,12 +998,21 @@ article .post-cat {
 	padding: 10px;
 }
 
+article .entry-header {
+	padding-bottom: 0px;
+}
+
+article .entry-summary,
+article .entry-content {
+	padding-top: 0px;
+}
 
 article footer {
 	border-width: 1px 0px;
 	border-style: solid;
 	border-color: #bbb;
 	color: #2B2B2B;
+	clear: both;
 }
 
 .entry-content h1:first-child,
