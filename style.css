@@ -649,9 +649,7 @@ div.wp-caption.alignright .wp-caption-text {
  * -----------------------------------------------------------------------------
  */
 
-body {
-	background-color: #E9F0FA;
-	
+body {	
 	/* gradient from 57,97,148 to 148,182,231 */
 	/* gradient from #396194 to #94B6E7 */
 	/* http://www.colorzilla.com/gradient-editor/#396194+0,94b6e7+100;Custom */
@@ -1433,6 +1431,11 @@ article img {
 
 @media screen and (min-width:1201px) {
 
+#top {
+	position: relative;
+	z-index: 8;
+}
+
 .hero, .sitewrap {
 	width: 1280px;
 	margin: 0px auto;
@@ -1744,7 +1747,8 @@ Secondary Flyout
 #content {
 	float: left;
 	width: 980px;
-	border-right: 300px solid #e0e0e0;
+	padding-bottom: 12px;
+	border-right: 300px solid #E8E8F4;
 }
 
 article, #disqus_thread, .pagination {
@@ -1775,6 +1779,8 @@ article footer {
 .site-footer {
 	padding: 24px;
 	width: auto;
+	position: relative;
+	z-index: 9;
 }
 
 .foot-wrap {
@@ -1833,7 +1839,6 @@ article footer {
 
 .sitewrap {
 	margin: 0px auto;
-	margin-bottom: 30px;
 }
 
 }
