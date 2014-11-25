@@ -710,6 +710,7 @@ article a:hover,
 body {	
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 16px;
+	background-color: #E8E8F4;
 }
 
 header, .widget-title, h1, h2, h3, h4, h5, h6 {
@@ -987,6 +988,7 @@ article.sticky .post-cat {
 
 article {
 	box-shadow: 0px 0px 1px 0px #6E6E80;
+	background-color: #FFF;
 }
 
 article .entry-header,
@@ -1817,11 +1819,20 @@ article footer {
 	width: 300px;
 	margin-left: -300px;
 	position: relative;
-	margin-bottom: 24px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: #FFF;
+	box-shadow: 0px 0px 1px 0px #6E6E80;
 }
 
 .widget {
 	font-size: 14px;
+	padding: 6px;
+}
+
+.widget_search .search-form {
+	margin-left: 8px;
+
 }
 
 .widget ul {
