@@ -1741,7 +1741,7 @@ Secondary Flyout
 #content {
 	float: left;
 	width: 980px;
-	border-right: 300px #eee;
+	border-right: 300px solid #e0e0e0;
 }
 
 article, #disqus_thread, .pagination {
