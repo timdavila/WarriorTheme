@@ -12,6 +12,7 @@
 
 <!-- footer.php -->
 		</div>
+		<div class="cf"></div>
 
 		<footer class="site-footer cf" role="contentinfo">
 			<div class="foot-wrap">
