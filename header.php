@@ -69,7 +69,9 @@
 		</div>
 
 		<!-- Dynamic PRIMARY NAV - Accomodates 4-10 links -->
+		<div class="primary-mast">
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav' , 'container_id' => 'nav-primary', 'container_class' => 'site-nav cf'  ) ); ?>
+		</div>
 
 		<div class="mobile search">
 			<?php get_search_form(); ?>

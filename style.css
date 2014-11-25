@@ -1697,10 +1697,17 @@ Secondary Flyout
 	display: table!important; /* required in case layout changes */
 }
 
+.primary-mast {
+	display: block;
+	width: 100%;
+	background-color: #396194;
+}
+
 .site-nav {
 	display: table;
 	table-layout: fixed; /* even width for all items */
-	width: 100%;
+	width: 1280px;
+	margin: 0 auto;
 }
 
 .site-nav ul {
