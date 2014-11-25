@@ -1741,6 +1741,7 @@ Secondary Flyout
 #content {
 	float: left;
 	width: 980px;
+	border-right: 300px #eee;
 }
 
 article, #disqus_thread, .pagination {
@@ -1768,10 +1769,6 @@ article footer {
 	margin-left: 5px;
 }
 
-main {
-	height: 100%;
-}
-
 .site-footer {
 	padding: 24px;
 	width: auto;
@@ -1794,9 +1791,10 @@ main {
 }
 
 .sidebar {
-	float: right;
-	height: 100%;
+	float: left;
 	width: 300px;
+	margin-left: -300px;
+	position: relative;
 	margin-bottom: 24px;
 }
 
