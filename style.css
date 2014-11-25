@@ -650,6 +650,7 @@ div.wp-caption.alignright .wp-caption-text {
  */
 
 body {	
+	background: #E8E8F4;
 	/* gradient from 57,97,148 to 148,182,231 */
 	/* gradient from #396194 to #94B6E7 */
 	/* http://www.colorzilla.com/gradient-editor/#396194+0,94b6e7+100;Custom */
@@ -660,10 +661,14 @@ body {
 }
 
 #top {
-	background: #ccc;
+	background: #E8E8F4;
 	-moz-box-shadow: 1px 1px 3px #333;
 	-webkit-box-shadow: 1px 1px 3px #333;
 	box-shadow: 1px 1px 3px #333;
+}
+
+#content {
+	background: #FFFFFF;
 }
 
 .lf {
@@ -1018,7 +1023,7 @@ article footer {
  */
 
 .site-footer {
-	background: #ccc;
+	background: #E8E8F4;
 	-moz-box-shadow: 0px -2px 2px #333;
 	-webkit-box-shadow: 0px -2px 2px #333;
 	box-shadow: 0px -2px 2px #333;
