@@ -66,6 +66,7 @@
 					<a id="btn-3" class="btn-reg" href="#" onclick="ToggleMenu('3');"><?php echo wp_nav_menu_title( 'walkthroughs' ); ?></a>
 				</div>
 			</div>
+			<div class="cf"></div>
 		</div>
 
 		<!-- Dynamic PRIMARY NAV - Accomodates 4-10 links -->
