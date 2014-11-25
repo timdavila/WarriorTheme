@@ -1510,6 +1510,7 @@ Secondary Flyout
 
 .flyout {
 	display: none;
+	z-index: 9;
 	width: 1158px;
 	height: 260px;
 	position: absolute;
@@ -1624,6 +1625,8 @@ Secondary Flyout
 }
 
 .secondary > ul {
+	position: relative;
+	z-index: 9;
 	width: 1160px;
 	padding: 0px 10px;
 	box-shadow: 0px 1px 2px #333;
@@ -1791,6 +1794,7 @@ article footer {
 }
 
 .sidebar {
+	z-index: 1;
 	float: left;
 	width: 300px;
 	margin-left: -300px;
