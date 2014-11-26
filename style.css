@@ -826,8 +826,9 @@ a.post-thumbnail:hover {
  
  .entry-header h1 {
  	font-weight: 300;
- 	font-size: 40px;
- 	margin-bottom: 0px;
+ 	font-size: 30px;
+ 	margin-bottom: 5px;
+ 	margin-top: 0px;
  	color: #2b2b2b;
  }
  
@@ -839,7 +840,8 @@ a.post-thumbnail:hover {
  	text-decoration: none;
  }
  
- .entry-date {
+ p.entry-date {
+ 	margin-bottom: 5px;
  	font-size: 14px;
  }
  
@@ -1113,9 +1115,14 @@ article img {
 	height: 30px;
 }
 
-#nav-2 ul li, #nav-3 ul li {
-	padding-left: 20px;
+#nav-2 ul li, 
+#nav-3 ul li {
 	border-bottom: 1px solid #bbb;
+}
+
+#nav-2 ul li a,
+#nav-3 ul li a {
+	padding-left: 20px;
 }
 
 #nav-2 li:hover,
@@ -1177,10 +1184,8 @@ article img {
 .btn-menu a {
 	display: block;
 	text-decoration: none;
-}
-
-.btn-menu a {
 	color: #396194;
+	padding-left: 20px;
 }
 
 .btn-menu i {
@@ -1192,7 +1197,6 @@ article img {
 }
 
 .btn-menu {
-	padding-left: 20px;
 	font-size: 22px;
 	height: 32px;
 	border-bottom: 1px solid #396194;
@@ -1771,7 +1775,6 @@ Secondary Flyout
 	float: left;
 	width: 980px;
 	padding-bottom: 12px;
-	border-right: 300px solid #E8E8F4;
 }
 
 article, #disqus_thread, .pagination {
@@ -1796,7 +1799,7 @@ article footer {
 .entry-meta {
 	float: left;
 	margin-top: 9px;
-	margin-left: 5px;
+	margin-left: 10px;
 }
 
 .site-footer {
@@ -1826,7 +1829,6 @@ article footer {
 	z-index: 1;
 	float: left;
 	width: 300px;
-	margin-left: -300px;
 	position: relative;
 	margin-top: 25px;
 	margin-bottom: 25px;
