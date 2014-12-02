@@ -680,7 +680,7 @@ article a:hover,
 .widget a:hover,
 .pagination a:hover,
 .site-footer a:hover {
-	color: #F0DDBD;
+	color: #F3B333;
 }
 
 
@@ -903,7 +903,7 @@ a.post-thumbnail:hover {
 	width: 36px;
 	height: 36px;
 	border-radius: 36px;
-	box-shadow: 2px 2px #F0DDBD;
+	box-shadow: 2px 2px #F3B333;
 }
 
 .btn-social a:hover {
@@ -951,6 +951,7 @@ a.post-thumbnail:hover {
 
 article.sticky {
 	box-shadow: 0px 0px 3px 0px #6E6E80;
+	background-color: #FFF;
 }
 
 article.sticky .entry-header,
@@ -960,29 +961,16 @@ article.sticky .post-cat {
 	padding: 10px;
 }
 
-*//*
-
-article {
-	box-shadow: 0px 0px 1px 0px #6E6E80;
-	background-color: #FFF;
-}
-
-article .entry-header,
-article .entry-summary,
-article .entry-content,
-article .post-cat {
-	padding: 10px;
-}
-
-article .entry-header {
+article.sticky .entry-header {
 	padding-bottom: 0px;
 }
 
-article .entry-summary,
-article .entry-content {
+article.sticky .entry-summary,
+article.sticky .entry-content {
 	padding-top: 0px;
 }
 */
+
 article footer {
 	background-color: #F0DDBD;
 	border-radius: 10px;
