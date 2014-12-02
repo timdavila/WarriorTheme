@@ -41,6 +41,12 @@
 				</a>
 			</div>
 			<div class="hero-banner tablet">
+				<script>
+					if( window.GuiltMode === undefined ){
+			  			document.write("<div style='width:728px; height:90px; padding: 20px; border:1px solid #000000; text-align:center; font-family:century gothic, arial, helvetica, sans serif;'>Advertising seems to be blocked by your browser.<br /><br /><span style='font-size:10px'>Advertising keeps this site running. Please consider whitelisting this site in your ad block settings.</div>");
+
+					}
+				</script>
 				<img src="http://placehold.it/728x90/ffffff/" />
 			</div>
 			<div class="hero-meta">
