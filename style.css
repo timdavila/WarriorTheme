@@ -619,18 +619,18 @@ div.wp-caption.alignright .wp-caption-text {
  */
 
 body {
-	background-color: #141913;
+	background-color: #253125;
 }
 
 #top {	
-	background: #131814; /* fallback for older browsers */
-	background: -moz-linear-gradient(top,  #1E4028 0%, #131814 40%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1E4028), color-stop(40%,#131814)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #1E4028 0%,#131814 40%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #1E4028 0%,#131814 40%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #1E4028 0%,#131814 40%); /* IE10+ */
-	background: linear-gradient(to bottom,  #1E4028 0%,#131814 40%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1E4028', endColorstr='#131814',GradientType=0 ); /* IE6-9 */
+	background: #0F1B11; /* fallback for older browsers */
+	background: -moz-linear-gradient(top,  #234B30 0%, #0F1B11 40%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#234B30), color-stop(40%,#0F1B11)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #234B30 0%,#0F1B11 40%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #234B30 0%,#0F1B11 40%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #234B30 0%,#0F1B11 40%); /* IE10+ */
+	background: linear-gradient(to bottom,  #234B30 0%,#0F1B11 40%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234B30', endColorstr='#0F1B11',GradientType=0 ); /* IE6-9 */
 
 	/* http://www.colorzilla.com/gradient-editor/#061729+0,29435e+40;Custom */
 
@@ -640,7 +640,7 @@ body {
 }
 
 .sitewrap {
-	background-color: #FFEED4;
+	background-color: #FBF0D4;
 }
 
 .lf {
@@ -660,7 +660,7 @@ body {
 article a,
 .widget a,
 .pagination a {
-	color: #1D6D28;
+	color: #1D6D26;
 	text-decoration: none;
 }
 
@@ -984,9 +984,8 @@ article .entry-content {
 }
 */
 article footer {
-	border-width: 1px 0px;
-	border-style: solid;
-	border-color: #bbb;
+	background-color: #F0DDBD;
+	border-radius: 10px;
 	color: #2B2B2B;
 	clear: both;
 }
@@ -1063,7 +1062,7 @@ article footer {
 }
 
 #top {
-	background: #131814;
+	background: #0F1B11;
 }
 
 main {
@@ -1244,7 +1243,7 @@ article {
 @media screen and (min-width:730px) and (max-width:1200px) {
 
 #top {
-	background: #131814;
+	background: #0F1B11;
 }
 
 .mobile, .desktop {
@@ -1519,7 +1518,7 @@ Secondary Flyout
 	width: 1158px;
 	height: 260px;
 	position: absolute;
-	color: #1D6D28;
+	color: #1D6D26;
 	background: #dddddd;
 	font-size: 14px;
 	-moz-box-shadow: 0 3px 5px #000000;
@@ -1616,14 +1615,14 @@ Secondary Flyout
 .secondary > ul,
 .secondary > ul > li {
 	border-right: 1px solid rgba(38,96,38,0.4);
-	background: #1D4028; /* Old browsers */
-	background: -moz-linear-gradient(top,  #1D4028 0%, #000201 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1D4028), color-stop(100%,#000201)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #1D4028 0%,#000201 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #1D4028 0%,#000201 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #1D4028 0%,#000201 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #1D4028 0%,#000201 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D4028', endColorstr='#000201',GradientType=0 ); /* IE6-9 */
+	background: #1C3E26; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1C3E26 0%, #000201 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1C3E26), color-stop(100%,#000201)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1C3E26 0%,#000201 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1C3E26 0%,#000201 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1C3E26 0%,#000201 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1C3E26 0%,#000201 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1C3E26', endColorstr='#000201',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -1642,13 +1641,13 @@ Secondary Flyout
 
 .secondary > ul > li:hover {
 	background: #28E233; /* Old browsers */
-	background: -moz-linear-gradient(top,  #1D4028 0%, #28E233 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1D4028), color-stop(100%,#28E233)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #1D4028 0%,#28E233 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #1D4028 0%,#28E233 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #1D4028 0%,#28E233 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #1D4028 0%,#28E233 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D4028', endColorstr='#28E233',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  #1C3E26 0%, #28E233 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1C3E26), color-stop(100%,#28E233)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1C3E26 0%,#28E233 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1C3E26 0%,#28E233 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1C3E26 0%,#28E233 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1C3E26 0%,#28E233 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1C3E26', endColorstr='#28E233',GradientType=0 ); /* IE6-9 */
 }
 
 .secondary .g1 > a {
@@ -1891,8 +1890,8 @@ article footer {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	margin-right: 30px;
-	background-color: #FFF;
-	box-shadow: 0px 0px 1px 0px #6E6E80;
+	background-color: #F0DDBD;
+	border-radius: 10px;
 }
 
 .widget {
@@ -1932,7 +1931,7 @@ article footer {
 
 .sitewrap {
 	margin: 0px auto;
-	box-shadow: 0 0 12px #333;
+	box-shadow: 0 0 12px #000;
 }
 
 }
