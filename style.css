@@ -680,7 +680,7 @@ article a:hover,
 .widget a:hover,
 .pagination a:hover,
 .site-footer a:hover {
-	color: #F3B333;
+	color: #F0DDBD;
 }
 
 
@@ -903,7 +903,7 @@ a.post-thumbnail:hover {
 	width: 36px;
 	height: 36px;
 	border-radius: 36px;
-	box-shadow: 2px 2px #F3B333;
+	box-shadow: 2px 2px #F0DDBD;
 }
 
 .btn-social a:hover {
@@ -1015,11 +1015,18 @@ article footer {
  * -----------------------------------------------------------------------------
  */
 
- .foot-col ul {
+.foot-col ul {
  	list-style: none;
- }
+}
  
- 
+.site-footer {
+	color: #ffffff;
+}
+
+.site-footer a {
+	text-decoration: underline;
+}
+
 /**
  * 9.0 Media Queries
  * -----------------------------------------------------------------------------
@@ -1531,7 +1538,7 @@ Secondary Flyout
 }
 
 .flyout a:hover {
-	color: #F3B333;
+	color: #F0DDBD;
 }
 
 .secondary ul li:nth-of-type(2) .flyout {
@@ -1857,17 +1864,13 @@ article footer {
 
 .site-footer {
 	width: auto;
-	color: #ffffff;
 	position: relative;
 	z-index: 9;
 }
 
 .foot-wrap {
 	padding: 20px 0;
-	width: 1280px;/*
-	-moz-box-shadow: 0px -2px 2px #333;
-	-webkit-box-shadow: 0px -2px 2px #333;
-	box-shadow: 0px -2px 2px #333;*/
+	width: 1280px;
 	margin: 0px auto;
 	display: table;
 }
