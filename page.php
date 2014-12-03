@@ -20,7 +20,7 @@ get_header(); ?>
 
 
 <?php
-	if ( is_front_page() && warriortheme_has_featured_posts() ) {
+	if ( is_front_page() ) {
 		// Include the featured content template.
 		get_template_part( 'featured-content' );
 	}
