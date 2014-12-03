@@ -91,8 +91,6 @@ add_action( 'after_setup_theme', 'warriortheme_setup' );
  *
  */
 function warriortheme_widgets_init() {
-	require get_template_directory() . '/inc/widgets.php';
-	register_widget( 'Warrior_Theme_Ephemera_Widget' );
 
 	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar', 'warriortheme' ),
