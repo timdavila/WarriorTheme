@@ -26,17 +26,6 @@
  */
 
 /**
- * Set up the content width value based on the theme's design.
- *
- * @see warriortheme_content_width()
- *
- * @since Warrior Theme 0.1
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 474;
-}
-
-/**
  * Warrior Theme only works in WordPress 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) ) {
@@ -96,18 +85,6 @@ function warriortheme_setup() {
 endif; // warriortheme_setup
 
 add_action( 'after_setup_theme', 'warriortheme_setup' );
-
-/**
- * Adjust content_width value for image attachment template.
- *
- * @since Warrior Theme 0.1
- */
-function warriortheme_content_width() {
-	if ( is_attachment() && wp_attachment_is_image() ) {
-		$GLOBALS['content_width'] = 810;
-	}
-}
-add_action( 'template_redirect', 'warriortheme_content_width' );
 
 /**
  * Register widget areas.
@@ -219,49 +196,6 @@ function warriortheme_the_attached_image() {
 }
 endif;
 
-if ( ! function_exists( 'warriortheme_list_authors' ) ) :
-/**
- * Print a list of all site contributors who published at least one post.
- *
- * @since Warrior Theme 0.1
- */
-function warriortheme_list_authors() {
-	$contributor_ids = get_users( array(
-		'fields'  => 'ID',
-		'orderby' => 'post_count',
-		'order'   => 'DESC',
-		'who'     => 'authors',
-	) );
-
-	foreach ( $contributor_ids as $contributor_id ) :
-		$post_count = count_user_posts( $contributor_id );
-
-		// Move on if user has not published a post (yet).
-		if ( ! $post_count ) {
-			continue;
-		}
-	?>
-
-	<div class="contributor">
-		<div class="contributor-info">
-			<div class="contributor-avatar"><?php echo get_avatar( $contributor_id, 132 ); ?></div>
-			<div class="contributor-summary">
-				<h2 class="contributor-name"><?php echo get_the_author_meta( 'display_name', $contributor_id ); ?></h2>
-				<p class="contributor-bio">
-					<?php echo get_the_author_meta( 'description', $contributor_id ); ?>
-				</p>
-				<a class="button contributor-posts-link" href="<?php echo esc_url( get_author_posts_url( $contributor_id ) ); ?>">
-					<?php printf( _n( '%d Article', '%d Articles', $post_count, 'warriortheme' ), $post_count ); ?>
-				</a>
-			</div><!-- .contributor-summary -->
-		</div><!-- .contributor-info -->
-	</div><!-- .contributor -->
-
-	<?php
-	endforeach;
-}
-endif;
-
 /**
  * Extend the default WordPress body classes.
  *
@@ -269,9 +203,7 @@ endif;
  * 1. Single or multiple authors.
  * 2. Presence of header image except in Multisite signup and activate pages.
  * 3. Index views.
- * 4. Full-width content layout.
- * 5. Presence of footer widgets.
- * 6. Single views.
+ * 4. Single views.
  *
  * @since Warrior Theme 0.1
  *
@@ -291,17 +223,6 @@ function warriortheme_body_classes( $classes ) {
 
 	if ( is_archive() || is_search() || is_home() ) {
 		$classes[] = 'list-view';
-	}
-
-	if ( ( ! is_active_sidebar( 'sidebar-2' ) )
-		|| is_page_template( 'page-templates/full-width.php' )
-		|| is_page_template( 'page-templates/contributors.php' )
-		|| is_attachment() ) {
-		$classes[] = 'full-width';
-	}
-
-	if ( is_active_sidebar( 'sidebar-3' ) ) {
-		$classes[] = 'footer-widgets';
 	}
 
 	if ( is_singular() && ! is_front_page() ) {

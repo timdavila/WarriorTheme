@@ -121,7 +121,6 @@ function warriortheme_categorized_blog() {
  * @since Warrior Theme 0.1
  */
 function warriortheme_category_transient_flusher() {
-	// Like, beat it. Dig?
 	delete_transient( 'warriortheme_category_count' );
 }
 add_action( 'edit_category', 'warriortheme_category_transient_flusher' );
@@ -145,11 +144,7 @@ function warriortheme_post_thumbnail() {
 
 	<div class="post-thumbnail">
 	<?php
-		if ( ( ! is_active_sidebar( 'sidebar-2' ) || is_page_template( 'page-templates/full-width.php' ) ) ) {
-			the_post_thumbnail( 'warriortheme-full-width' );
-		} else {
 			the_post_thumbnail();
-		}
 	?>
 	</div>
 
@@ -157,11 +152,7 @@ function warriortheme_post_thumbnail() {
 
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>">
 	<?php
-		if ( ( ! is_active_sidebar( 'sidebar-2' ) || is_page_template( 'page-templates/full-width.php' ) ) ) {
-			the_post_thumbnail( 'warriortheme-full-width' );
-		} else {
 			the_post_thumbnail();
-		}
 	?>
 	</a>
 
