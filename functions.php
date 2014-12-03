@@ -79,7 +79,7 @@ function warriortheme_setup() {
 
 	// This theme allows users to set a custom background.
 	add_theme_support( 'custom-background', apply_filters( 'warriortheme_custom_background_args', array(
-		'default-color' => 'f5f5f5',
+		'default-color' => '253125',
 	) ) );
 }
 endif; // warriortheme_setup
