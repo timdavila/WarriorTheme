@@ -16,7 +16,7 @@ This theme takes a mobile first approach, and is optimized for screens 320px, 76
 and 1280px wide, though there is some fluidity between these targets. Browsers 
 targeted are the most recent at time of development:
 Internet Explorer 11, Mozilla Firefox 33, Google Chrome 38
-Last updated: 12/2/2014
+Last updated: 12/3/2014
 ****/
 
 /******
@@ -532,7 +532,7 @@ span > object {
 blockquote.alignleft,
 figure.wp-caption.alignleft,
 img.alignleft {
-	margin: 7px 24px 15px 0;
+	margin: 7px 16px 15px 0;
 }
 
 .wp-caption.alignleft {
@@ -542,7 +542,7 @@ img.alignleft {
 blockquote.alignright,
 figure.wp-caption.alignright,
 img.alignright {
-	margin: 7px 0 15px 24px;
+	margin: 7px 0 15px 16px;
 }
 
 .wp-caption.alignright {
@@ -794,13 +794,13 @@ header, .widget-title, h1, h2, h3, h4, h5, h6 {
  	font-weight: 300;
  }
  
- .entry-header h1 {
+.entry-header h1 {
  	font-weight: 400;
  	font-size: 30px;
- 	margin-bottom: 5px;
+ 	margin-bottom: 1px;
  	margin-top: 0px;
  	color: #2b2b2b;
- }
+}
  
  .archive-header h1 {
  	font-weight: 300;
@@ -829,7 +829,7 @@ header, .widget-title, h1, h2, h3, h4, h5, h6 {
  }
  
  .comments-link {
- 	font-size: 18px;
+ 	font-size: 16px;
  }
 
 .comments-link a {
@@ -1506,8 +1506,8 @@ Secondary Flyout
 	width: 1158px;
 	height: 260px;
 	position: absolute;
-	color: #1D6D26;
-	background: #F0DDBD;
+	color: #152F02;
+	background: #C6E2C9;
 	font-size: 14px;
 	-moz-box-shadow: 0 3px 5px #000000;
 	-webkit-box-shadow: 0 3px 5px #000000;
@@ -1515,10 +1515,17 @@ Secondary Flyout
 }
 
 .flyout a {
-	color: #1D4029;
+	color: #000000;
+	text-decoration: none;
 }
 
-.flyout a:hover {
+.flyout strong a,
+.flyout a strong {
+	color: #152F02;
+}
+
+.flyout a:hover,
+.flyout a:hover * {
 	color: #F3B333;
 }
 
@@ -1628,14 +1635,14 @@ Secondary Flyout
 }
 
 .secondary > ul > li:hover {
-	background: #28E233; /* Old browsers */
-	background: -moz-linear-gradient(top,  #1C3E26 0%, #28E233 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1C3E26), color-stop(100%,#28E233)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #1C3E26 0%,#28E233 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #1C3E26 0%,#28E233 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #1C3E26 0%,#28E233 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #1C3E26 0%,#28E233 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1C3E26', endColorstr='#28E233',GradientType=0 ); /* IE6-9 */
+	background: #C6E2C9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1C3E26 0%, #C6E2C9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1C3E26), color-stop(100%,#C6E2C9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1C3E26 0%,#C6E2C9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1C3E26 0%,#C6E2C9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1C3E26 0%,#C6E2C9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1C3E26 0%,#C6E2C9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1C3E26', endColorstr='#C6E2C9',GradientType=0 ); /* IE6-9 */
 }
 
 .secondary .g1 > a {
@@ -1746,7 +1753,7 @@ Secondary Flyout
 .fly-col ul li a {
 	width: auto;
 	height: auto;
-	display: static;
+	display: inline;
 }
 
 .secondary ul li:hover .flyout {
@@ -1819,7 +1826,7 @@ Secondary Flyout
 }
 
 article, #disqus_thread, .pagination {
-	margin: 25px 20px 30px;
+	margin: 20px 20px 25px;
 }
 
 .pagination {
@@ -1840,7 +1847,7 @@ article footer {
 
 .entry-meta {
 	float: left;
-	margin-top: 11px;
+	margin-top: 13px;
 	margin-left: 10px;
 }
 
