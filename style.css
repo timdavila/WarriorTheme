@@ -511,6 +511,8 @@ span > embed,
 span > iframe,
 span > object {
 	margin-bottom: 0;
+	max-width: 100%!important;
+	height: auto;
 }
 
 /* Alignment */
@@ -689,12 +691,12 @@ article a:hover,
  * -----------------------------------------------------------------------------
  */
 body {	
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
 header, .widget-title, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Signika', sans-serif;
+	font-family: 'Signika', Verdana, sans-serif;
 }
 
 /**
