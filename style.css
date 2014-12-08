@@ -1208,7 +1208,11 @@ p > object,
 span > embed,
 span > iframe,
 span > object {
-	max-width: 310px!important;
+	max-width: 320px!important;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
 }
 
 article {
