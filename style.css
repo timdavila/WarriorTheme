@@ -511,8 +511,6 @@ span > embed,
 span > iframe,
 span > object {
 	margin-bottom: 0;
-	max-width: 100%!important;
-	height: auto;
 }
 
 /* Alignment */
@@ -1193,6 +1191,16 @@ img.alignright {
 	float: none;
 	display: block;
 	margin: 8px auto;
+}
+
+/* handle iframes on mobile */
+p > embed,
+p > iframe,
+p > object,
+span > embed,
+span > iframe,
+span > object {
+	max-width: 310px!important;
 }
 
 article {
