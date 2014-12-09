@@ -14,7 +14,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title</h2>
-					<img src="http://placehold.it/230x150">
+					<div class="fly-img"></div>
 					<p>Optional Subtitle</p>
 				</div>
 				<div class="fly-col">
@@ -71,7 +71,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 2</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -112,7 +112,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 3</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -159,7 +159,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 4</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -230,7 +230,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Ocarina of Time</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -308,7 +308,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 6</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -379,7 +379,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 7</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -426,7 +426,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 8</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -473,7 +473,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 9</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -520,7 +520,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 10</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -567,7 +567,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 11</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -614,7 +614,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 12</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -661,7 +661,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 13</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -708,7 +708,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 14</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -755,7 +755,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 15</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -802,7 +802,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 16</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -849,7 +849,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 17</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -896,7 +896,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 18</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
@@ -943,7 +943,7 @@
 			<div class="flyout">
 				<div class="fly-col">
 					<h2>Flyout Title 19</h2>
-					<img src="http://lorempixel.com/230/150">
+					<div class="fly-img"></div>
 				</div>
 				<div class="fly-col">
 					<ul>
