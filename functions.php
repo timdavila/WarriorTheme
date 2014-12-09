@@ -51,7 +51,9 @@ function warriortheme_setup() {
 
 	// Enable support for Post Thumbnails, and declare two sizes.
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 9999, 375, false );
+	set_post_thumbnail_size( 920, 375, false );
+
+	add_image_size( 'thumb-large', 9999, 375 );
 
 	// This theme uses wp_nav_menu() in three locations.
 	register_nav_menus( array(
