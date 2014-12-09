@@ -13,8 +13,10 @@ $metadata = wp_get_attachment_metadata();
 get_header();
 ?>
 
-	<section id="primary" class="content-area image-attachment">
-		<div id="content" class="site-content" role="main">
+<!-- template image.php -->
+
+<div class="sitewrap">
+	<main id="content" role="main">
 
 	<?php
 		// Start the Loop.
@@ -32,22 +34,21 @@ get_header();
 
 						<span class="parent-post-link"><a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>" rel="gallery"><?php echo get_the_title( $post->post_parent ); ?></a></span>
 						<?php edit_post_link( __( 'Edit', 'warriortheme' ), '<span class="edit-link">', '</span>' ); ?>
-					</div><!-- .entry-meta -->
-				</header><!-- .entry-header -->
+					</div>
+				</header>
 
 				<div class="entry-content">
 					<div class="entry-attachment">
 						<div class="attachment">
 							<?php warriortheme_the_attached_image(); ?>
-						</div><!-- .attachment -->
+						</div>
 
 						<?php if ( has_excerpt() ) : ?>
 						<div class="entry-caption">
 							<?php the_excerpt(); ?>
-						</div><!-- .entry-caption -->
+						</div>
 						<?php endif; ?>
-					</div><!-- .entry-attachment -->
-
+					</div>
 					<?php
 						the_content();
 						wp_link_pages( array(
@@ -57,22 +58,19 @@ get_header();
 							'link_after'  => '</span>',
 						) );
 					?>
-				</div><!-- .entry-content -->
-			</article><!-- #post-## -->
+				</div>
+			</article>
 
 			<nav id="image-navigation" class="navigation image-navigation">
 				<div class="nav-links">
 				<?php previous_image_link( false, '<div class="previous-image">' . __( 'Previous Image', 'warriortheme' ) . '</div>' ); ?>
 				<?php next_image_link( false, '<div class="next-image">' . __( 'Next Image', 'warriortheme' ) . '</div>' ); ?>
-				</div><!-- .nav-links -->
-			</nav><!-- #image-navigation -->
-
-			<?php comments_template(); ?>
+				</div>
+			</nav>
 
 		<?php endwhile; // end of the loop. ?>
 
-		</div><!-- #content -->
-	</section><!-- #primary -->
+	</main>
 
 <?php
 get_sidebar();
