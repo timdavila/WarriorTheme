@@ -81,8 +81,8 @@
 
 			<div class="post-social">
 				<span>Share this post:</span>
-				<div class="btn-share fb"><a href="http://www.facebook.com/share.php?u=<?php echo esc_url( get_permalink() ) ?>&t=<?php the_title( ); ?>" target="_blank" onClick="popup(this.href); return false;"><i class="fa fa-facebook"></i></a></div>
-				<div class="btn-share tw"><a href="http://twitter.com/share?url=<?php echo esc_url( get_permalink() ) ?>&text=<?php the_title( ); ?>" target="_blank" onClick="popup(this.href); return false;"><i class="fa fa-twitter"></i></a></div>
+				<div class="btn-share fb"><a href="http://www.facebook.com/share.php?u=<?php echo esc_url( get_permalink() ) ?>&amp;t=<?php the_title_attribute( ); ?>" target="_blank" onClick="popup(this.href); return false;"><i class="fa fa-facebook"></i></a></div>
+				<div class="btn-share tw"><a href="http://twitter.com/share?url=<?php echo esc_url( get_permalink() ) ?>&amp;text=<?php the_title_attribute( ); ?>" target="_blank" onClick="popup(this.href); return false;"><i class="fa fa-twitter"></i></a></div>
 				<div class="btn-share gp"><a href="https://plus.google.com/share?url=<?php echo esc_url( get_permalink() ) ?>" target="_blank" onclick="popup(this.href); return false;"><i class="fa fa-google-plus"></i></a></div>
 				<div class="btn-share rd"><a href="http://www.reddit.com/submit?url=<?php echo esc_url( get_permalink() ) ?>" target="_blank"><i class="fa fa-reddit"></i></a></div>
 			</div>

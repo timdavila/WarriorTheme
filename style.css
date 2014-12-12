@@ -5,6 +5,8 @@ Author: Tim Davila
 Author URI: http://timdavila.com/
 Description: A WordPress theme for 4.0
 Version: 1.0
+License: Creative Commons Attribution-ShareAlike 4.0 
+License URI: http://creativecommons.org/licenses/by-sa/4.0/
 Tags: two-columns, right-sidebar, responsive-layout, full-width-template, theme-options
 Text Domain: WarriorTheme
 */
@@ -1991,6 +1993,7 @@ article footer {
 	padding-left: 8px;
 	border-bottom: 1px solid #2B2B2B;
 	color: #2B2B2B;
+	line-height: 1.3846153846;
 }
 
 .spacer {

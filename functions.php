@@ -75,13 +75,17 @@ function warriortheme_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
+		'aside', 'image', 'video', 'audio', 'quote', 'link',
 	) );
 
 	// This theme allows users to set a custom background.
 	add_theme_support( 'custom-background', apply_filters( 'warriortheme_custom_background_args', array(
 		'default-color' => '253125',
 	) ) );
+
+	// Only setting this for any plugins that need it.
+	// See http://wycks.wordpress.com/2013/02/14/why-the-content_width-wordpress-global-kinda-sucks/
+	if ( ! isset( $content_width ) ) $content_width = 1180;
 }
 endif; // warriortheme_setup
 
@@ -99,8 +103,8 @@ function warriortheme_widgets_init() {
 		'description'   => __( 'Main sidebar that appears on the right.', 'warriortheme' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'warriortheme' ),
@@ -108,8 +112,8 @@ function warriortheme_widgets_init() {
 		'description'   => __( 'Appears in the footer of the site.', 'warriortheme' ),
 		'before_widget' => '<div id="%1$s" class="foot-col %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h2 class="foot-widget-title">',
+		'after_title'   => '</h2>',
 	) );
 }
 add_action( 'widgets_init', 'warriortheme_widgets_init' );
