@@ -25,6 +25,12 @@
 	<!--[if IE 9]>
 	    <style type="text/css">.secondary {height:auto!important;}</style>
 	<![endif]-->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href=" <?php echo get_template_directory_uri(); ?>/inc/ie.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href=" <?php echo get_template_directory_uri(); ?>/inc/ie.css" />
+	<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
