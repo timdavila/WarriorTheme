@@ -53,7 +53,7 @@ function warriortheme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 920, 375, false );
 
-	add_image_size( 'thumb-large', 9999, 375 );
+	add_image_size( 'warriortheme-full-width', 1020, 500, true );
 
 	// This theme uses wp_nav_menu() in three locations.
 	register_nav_menus( array(
