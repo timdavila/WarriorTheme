@@ -11,24 +11,23 @@
 ?><!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial scale=1">
-	<meta name="description" content="<?php bloginfo('description'); ?>">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Signika:300,400" rel="stylesheet" type="text/css">
-	<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Signika:300,400" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
 
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<title><?php wp_title( '-', true, 'right' ); ?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
-	<!--[if IE 9]>
-	    <style type="text/css">.secondary {height:auto!important;}</style>
-	<![endif]-->
-	<!--[if lt IE 9]>
-		<script src="<?php echo get_template_directory_uri(); ?>/scripts/html5.js"></script>
-		<link rel="stylesheet" type="text/css" href=" <?php echo get_template_directory_uri(); ?>/inc/ie.css" />
-	<![endif]-->
+<!--[if IE 9]>
+    <style type="text/css">.secondary {height:auto!important;} #top,.secondary > ul {z-index:auto!important;}</style>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="<?php echo get_template_directory_uri(); ?>/scripts/html5.js"></script>
+	<link rel="stylesheet" type="text/css" href=" <?php echo get_template_directory_uri(); ?>/inc/ie.css" />
+<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
