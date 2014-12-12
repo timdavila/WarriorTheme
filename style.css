@@ -4,7 +4,7 @@ Theme URI: https://github.com/timdavila/WarriorTheme
 Author: Tim Davila
 Author URI: http://timdavila.com/
 Description: A WordPress theme for 4.0
-Version: 0.2
+Version: 1.0
 Tags: two-columns, right-sidebar, responsive-layout, full-width-template, theme-options
 Text Domain: WarriorTheme
 */
@@ -14,9 +14,9 @@ Authors notes:
 
 This theme takes a mobile first approach, and is optimized for screens 320px, 768px, 
 and 1280px wide, though there is some fluidity between these targets. Browsers 
-targeted are the most recent at time of development:
+targeted and supported are the most recent at time of development:
 Internet Explorer 11, Mozilla Firefox 33, Google Chrome 38
-Last updated: 12/3/2014
+Last updated: 12/12/2014
 ****/
 
 /******
@@ -460,13 +460,9 @@ hr {
 	color: #939393;
 }
 
-/* Responsive images. Fluid images for posts, comments, and widgets */
+/* Fluid images for posts, comments, and widgets */
 
-.comment-content img,
-.entry-content img,
-.entry-summary img,
-#site-header img,
-.widget img,
+img,
 .wp-caption {
 	max-width: 100%;
 }
@@ -521,7 +517,7 @@ span > object {
 	margin-bottom: 0;
 }
 
-/* Alignment */
+/* Wordpress added alignment */
 
 .alignleft {
 	float: left;
@@ -577,6 +573,8 @@ img.aligncenter,
 	margin-bottom: 17px;
 }
 
+/* WordPress captions */
+
 .wp-caption {
 	margin-bottom: 24px;
 }
@@ -621,6 +619,17 @@ div.wp-caption.alignright .wp-caption-text {
 	display: none;
 }
 
+.lf {
+	float: left;
+}
+
+.rf {
+	float: right;
+}
+
+.cf {
+	clear: both;
+}
 /**
  * 3.0 Basic Structure
  * -----------------------------------------------------------------------------
@@ -640,7 +649,7 @@ body {
 	background: linear-gradient(to bottom,  #234B30 0%,#0F1B11 40%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234B30', endColorstr='#0F1B11',GradientType=0 ); /* IE6-9 */
 
-	/* http://www.colorzilla.com/gradient-editor/#061729+0,29435e+40;Custom */
+	/* http://www.colorzilla.com/gradient-editor/#234B30+0,0F1B11+40;Custom */
 
 	-moz-box-shadow: 1px 1px 3px #111;
 	-webkit-box-shadow: 1px 1px 3px #111;
@@ -651,17 +660,6 @@ body {
 	background-color: #FBF0D4;
 }
 
-.lf {
-	float: left;
-}
-
-.rf {
-	float: right;
-}
-
-.cf {
-	clear: both;
-}
 
 /* links */
 
@@ -696,6 +694,7 @@ article a:hover,
  * 4.0 Fonts
  * -----------------------------------------------------------------------------
  */
+ 
 body {	
 	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -768,7 +767,7 @@ header, .widget-title, h1, h2, h3, h4, h5, h6 {
 }
 
 #nav-primary ul li a {
-	text-transform: uppercase; /* todo: remove */
+	text-transform: uppercase;
 	color: #ffffff;
 	font-size: 22px;
 }
@@ -791,7 +790,7 @@ header, .widget-title, h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
-/* Blog Article Presentation */
+/* Blog Post Presentation */
 
  article {
  	word-wrap: break-word;
@@ -810,35 +809,76 @@ header, .widget-title, h1, h2, h3, h4, h5, h6 {
  	color: #2b2b2b;
 }
  
- .archive-header h1 {
- 	font-weight: 300;
- }
- 
- .entry-header a {
- 	text-decoration: none;
- }
- 
- p.entry-date {
- 	margin-bottom: 5px;
- 	font-size: 14px;
- }
- 
+.archive-header h1 {
+	font-weight: 300;
+}
+
+.entry-header a {
+	text-decoration: none;
+}
+
+.entry-date {
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.entry-content,
+.entry-summary,
+.page-content {
+	word-wrap: break-word;
+	text-align: justify;
+	font-size: 98%;
+}
+
+.archive-header {
+	box-shadow: 0px 0px 3px 0px #6E6E80;
+	padding: 10px;
+	margin: 25px;
+}
+
+article footer {
+	background-color: #F0DDBD;
+	color: #2B2B2B;
+	clear: both;
+}
+
+.entry-content h1:first-child,
+.entry-content h2:first-child,
+.entry-content h3:first-child,
+.entry-content h4:first-child,
+.entry-content h5:first-child,
+.entry-content h6:first-child,
+.entry-summary h1:first-child,
+.entry-summary h2:first-child,
+.entry-summary h3:first-child,
+.entry-summary h4:first-child,
+.entry-summary h5:first-child,
+.entry-summary h6:first-child,
+.page-content h1:first-child,
+.page-content h2:first-child,
+.page-content h3:first-child,
+.page-content h4:first-child,
+.page-content h5:first-child,
+.page-content h6:first-child {
+	margin-top: 0;
+}
+
  /**
   * 7.1 Social Buttons
   * -----------------------------------------------------------------------------
  */
  
- .post-social span {
- 	display: inline-block;
- 	float: left;
- 	padding-top: 6px;
- 	margin-right: 18px;
- 	height: 32px;
- }
- 
- .comments-link {
- 	font-size: 16px;
- }
+.post-social span {
+	display: inline-block;
+	float: left;
+	padding-top: 6px;
+	margin-right: 18px;
+	height: 32px;
+}
+
+.comments-link {
+	font-size: 16px;
+}
 
 .comments-link a {
 	text-decoration: none;
@@ -930,75 +970,8 @@ header, .widget-title, h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
 }
 
-/**
- * Post Content
- * -----------------------------------------------------------------------------
- */
 
-.entry-content,
-.entry-summary,
-.page-content {
-	word-wrap: break-word;
-	text-align: justify;
-	font-size: 98%;
-}
 
-.archive-header {
-	box-shadow: 0px 0px 3px 0px #6E6E80;
-	padding: 10px;
-	margin: 25px;
-}
-
-/*
-
-article.sticky {
-	box-shadow: 0px 0px 3px 0px #6E6E80;
-	background-color: #FFF;
-}
-
-article.sticky .entry-header,
-article.sticky .entry-summary,
-article.sticky .entry-content,
-article.sticky .post-cat {
-	padding: 10px;
-}
-
-article.sticky .entry-header {
-	padding-bottom: 0px;
-}
-
-article.sticky .entry-summary,
-article.sticky .entry-content {
-	padding-top: 0px;
-}
-*/
-
-article footer {
-	background-color: #F0DDBD;
-	color: #2B2B2B;
-	clear: both;
-}
-
-.entry-content h1:first-child,
-.entry-content h2:first-child,
-.entry-content h3:first-child,
-.entry-content h4:first-child,
-.entry-content h5:first-child,
-.entry-content h6:first-child,
-.entry-summary h1:first-child,
-.entry-summary h2:first-child,
-.entry-summary h3:first-child,
-.entry-summary h4:first-child,
-.entry-summary h5:first-child,
-.entry-summary h6:first-child,
-.page-content h1:first-child,
-.page-content h2:first-child,
-.page-content h3:first-child,
-.page-content h4:first-child,
-.page-content h5:first-child,
-.page-content h6:first-child {
-	margin-top: 0;
-}
 /**
  * 8.0 Footer
  * -----------------------------------------------------------------------------
@@ -1202,6 +1175,7 @@ img.alignright {
 }
 
 /* handle iframes on mobile */
+
 p > embed,
 p > iframe,
 p > object,

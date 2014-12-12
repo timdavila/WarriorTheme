@@ -22,6 +22,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+	<!--[if IE 9]>
+	    <style type="text/css">.secondary {height:auto!important;}</style>
+	<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
