@@ -144,7 +144,7 @@ function warriortheme_post_thumbnail() {
 
 	<div class="post-thumbnail">
 	<?php
-			the_post_thumbnail();
+			the_post_thumbnail('warriortheme-full-width');
 	?>
 	</div>
 
@@ -152,7 +152,7 @@ function warriortheme_post_thumbnail() {
 
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>">
 	<?php
-			the_post_thumbnail();
+			the_post_thumbnail('warriortheme-full-width');
 	?>
 	</a>
 

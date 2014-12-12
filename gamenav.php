@@ -244,7 +244,7 @@
 						<li><a href="#">7 Forest Temple</a></li>
 						<li><!-- BLANK -->&nbsp;</li>
 						<li><a href="#"><strong>Master Quest Walkthrough</strong></a></li>
-						<li><strong><a href="#">Video Walkthrough</a></strong></li>
+						<li><a href="#"><strong>Video Walkthrough</strong></a></li>
 					</ul>
 				</div>
 				<div class="fly-col">

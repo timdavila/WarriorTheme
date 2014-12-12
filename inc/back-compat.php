@@ -51,7 +51,7 @@ function warriortheme_customize() {
 add_action( 'load-customize.php', 'warriortheme_customize' );
 
 /**
- * Prevent the Theme Preview from being loaded on WordPress versions prior to 3.4.
+ * Prevent the Theme Preview from being loaded on WordPress versions prior to 3.6.
  *
  * @since Warrior Theme 0.1
  */
