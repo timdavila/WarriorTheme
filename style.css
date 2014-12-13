@@ -488,8 +488,8 @@ img.size-full,
 img.size-large,
 .wp-post-image,
 .post-thumbnail img {
-	height: auto!important;
-	max-width: 100%!important;
+	height: auto;
+	max-width: 100%;
 }
 
 /* Center featured images */
@@ -1992,6 +1992,12 @@ article footer {
 .sitewrap {
 	margin: 0px auto;
 	box-shadow: 0 0 12px #000;
+}
+
+.hero-banner ins.adsbygoogle {
+	display: inline-block;
+	width: 728px;
+	height: 90px;
 }
 }
 
