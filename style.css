@@ -1888,7 +1888,7 @@ Secondary Flyout
 
 #content {
 	float: left;
-	width: 960px;
+	width: 948px;
 	padding-bottom: 12px;
 }
 
@@ -1944,7 +1944,7 @@ article footer {
 .sidebar {
 	z-index: 1;
 	float: left;
-	width: 300px;
+	width: 312px;
 	position: relative;
 	margin-top: 25px;
 	margin-bottom: 25px;
