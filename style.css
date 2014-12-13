@@ -1396,6 +1396,11 @@ article img {
 	margin: 0px 0px 12px 0px;
 }
 
+.hero-banner ins.adsbygoogle {
+	display: inline-block;
+	width: 728px;
+	height: 90px;
+}
 }
 
 /*
