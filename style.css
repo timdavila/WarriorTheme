@@ -577,9 +577,20 @@ article a:hover, .widget a:hover, .pagination a:hover, .site-footer a:hover {
 /**
  * 4.0 Fonts
  * -----------------------------------------------------------------------------
+ *
+ * Noto Sans and Signika are Google fonts, loaded from Google CDN:
+ * http://www.google.com/fonts/specimen/Signika
+ * http://www.google.com/fonts/specimen/Noto+Sans
+ *
+ * Font Awesome 4.2 is used for social buttons and a few other icons:
+ * http://fortawesome.github.io/Font-Awesome/
+ *
+ * Font Awesome is loaded via the Bootstrap CDN:
+ * http://www.bootstrapcdn.com/#fontawesome_tab
+ *
+ * All 3 font includes are found in header.php
+ *
  */
-
-/* Noto Sans and Signika are Google fonts, loaded from Google CDN. See header.php */
 
 body {
 	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
