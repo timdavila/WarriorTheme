@@ -80,7 +80,7 @@ function warriortheme_posted_on() {
 		esc_url( get_permalink() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_url( get_the_author_meta( 'user_url' ) ),
 		get_the_author()
 	);
 }
